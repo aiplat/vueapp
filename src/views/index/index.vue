@@ -9,7 +9,13 @@
               <li class="cm_pc_12 cm_be cm_mb05">
                 <div class="cm_pc_12 cm_pd05 cm_bf cm_lh105 cm_ti2 cm_mb05">{{indexData.description}}</div>
               </li>
-              <li class="cm_pc_12 cm_prl05">
+              <li class="cm_pc_12 cm_prl05 cm_tc">
+                  <div class="cm_w5 cm_prl05 cm_be cm_hl2">{{indexData.gitName}}</div>   
+              </li>
+              <li class="cm_pc_12 cm_prl05 cm_hl2 cm_ti2">
+                  <a v-bind:href="indexData.gitUrl" target="_blank">{{indexData.gitUrl}}</a>
+              </li>
+              <li class="cm_pc_12 cm_prl05 cm_tc">
                   <div class="cm_w5 cm_prl05 cm_be cm_hl2">{{indexData.cooperation}}</div>   
               </li>
               <li class="cm_pc_12 cm_prl05 cm_hl2 cm_ti2">
@@ -31,8 +37,10 @@ export default {
       title: thisPage.title,
       indexData:{
         "description":"ai智能空间,拥抱人工智能,明天会更好。目前潜心使用vue.js开发h5app:同时兼容wap、web、微信、android和ios,五个平台界面统一,功能一致,只有app有独立功能。",
+        "gitName":"我的git",
+        "gitUrl":"https://github.com/womendi",
         "cooperation": "商业合作",
-        "email": "womendi@qq.com"
+        "email": "womendi@qq.com",
       }
     };
   },
