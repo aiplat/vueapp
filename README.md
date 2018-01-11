@@ -1,7 +1,7 @@
 #vueapp
 <br>##vue2+vue-router+vuex+webpack
 <br>##实例网站：aiplat.com
-<br>##aiplat.com开源框架自vue-cli
+<br>##aiplat.com开源框架来自vue-cli
 <br>
 <br>#开发指南
 <br>
