@@ -1,0 +1,57 @@
+<template>
+  <div class="cm_main2">
+    <m-title :title="title"></m-title>
+    <div class="cm_pc_12 cm_mtb3">
+        <div class="cm_pc_12 cm_mtb1">
+            <div class="img_logo cm_wh7 cm_bs100 cm_br305 cm_fc"></div>
+        </div>
+        <ul class="cm_pc_12" v-for="(item,k2) in indexData">
+            <li class="cm_pc_12 cm_prl05">
+                  <div class="cm_fl cm_prl05 cm_be cm_hl2 cm_mtb05 cm_br02">{{k2+1}}、{{item.name}}</div>
+            </li>
+            <li class="cm_pc_12 cm_pd05 cm_tc cm_be">
+                <div class="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce" v-for="(v,k) in item.arr">
+                    <a :href="v.url" :title="v.name" target="_blank">
+                      <div class="cmtou" v-if="v.market">{{v.market+'-'+v.name}}</div>
+                      <div class="cmtou" v-else>{{v.name}}</div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <m-footer></m-footer>
+  </div>
+</template>
+<script>
+import { mapState, mapActions } from 'vuex';
+import mTitle from 'components/aiplat/header1';
+import mFooter from 'components/aiplat/footer1';
+export default {
+  data() {
+    return {
+      title: thisPage.title,
+      indexData:[ {
+        "name": "亲信地铁",
+        "arr": [
+          { "name": "web app", "url": "http://m.aiplat.com/metro","market":""},
+          {"name": "安卓app下载","url": "http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5","market":"腾讯应用宝"},
+          {"name": "苹果app下载","url":"https://itunes.apple.com/us/app/%E4%BA%B2%E4%BF%A1%E5%9C%B0%E9%93%81/id1254451008?l=zh&ls=1&mt=8#","market":"appstore"}
+        ]
+      }]
+    };
+  },
+  methods: {
+    ...mapActions(['pushToBaidu','getApps'])
+  },
+  mounted() {
+    var t = this;
+    t.pushToBaidu();
+    cm.setWXH();
+  },
+  components: { mTitle, mFooter },
+  activated: function() {
+    cm.sli2(0, 1);
+  },
+  deactivated: function() {}
+};
+</script>
