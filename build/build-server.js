@@ -50,12 +50,26 @@ app.use(function (req, res) {
   });
 });
 
+function getIPAdress(){  
+  var interfaces = require('os').networkInterfaces();  
+  for(var devName in interfaces){  
+        var iface = interfaces[devName];  
+        for(var i=0;i<iface.length;i++){  
+             var alias = iface[i];  
+             if(alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal){  
+                   return alias.address;  
+             }  
+        }  
+  }  
+} 
 module.exports = app.listen(port, function (err) {
   if (err) {
     console.log(err)
     return
   }
-  var uri = 'http://localhost:' + port
-  console.log('Build server listening at ' + uri + '\n')
+  var ip=getIPAdress();
+  var uri = 'http://'+ip+':' + port
+  console.log('Listening on ' +uri);
+  console.log('Run successfully.');
   opn(uri)
 })

@@ -1,9 +1,11 @@
 #vueapp
-<br>##vue2+vue-router+vuex+webpack
+<br>##vue2+vue-router+vuex+webpack+cmui
 <br>##实例网站：aiplat.com
 <br>##aiplat.com开源框架来自vue-cli
+<br>##cmui仓库为https://github.com/womendi/cmui.git
 <br>
-<br>#开发指南
+<br>
+<br>#指南
 <br>
 <br>#clone
 <br>##$ git clone https://github.com/womendi/vueapp.git
@@ -18,6 +20,12 @@
 <br>
 <br>#开发模式(实时刷新)
 <br>##$ npm run dev
+<br>
+<br>Listening on http://192.168.1.14:3003
+<br>Run successfully.
+<br>最后看到以下这句 表示webpack编译成功
+<br>webpack: Compiled successfully.
+<br>
 <br>##打开 http://localhost:3003
 <br>##或打开 http://具体ip:3003，方便手机在局域网访问
 <br>
