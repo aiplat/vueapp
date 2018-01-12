@@ -21,13 +21,13 @@
 <br>#开发模式(实时刷新)
 <br>##$ npm run dev
 <br>
-<br>Listening on http://192.168.1.14:3003
+<br>Listening on http://本机ip:3003
 <br>Run successfully.
 <br>最后看到以下这句 表示webpack编译成功
 <br>webpack: Compiled successfully.
 <br>
 <br>##打开 http://localhost:3003
-<br>##或打开 http://具体ip:3003，方便手机在局域网访问
+<br>##或打开 http://本机ip:3003，方便手机在局域网访问
 <br>
 <br>
 <br>#打包项目
