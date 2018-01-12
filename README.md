@@ -1,6 +1,6 @@
 #vueapp
 <br>##vue2+vue-router+vuex+webpack+cmui
-<br>##实例网站：aiplat.com
+<br>##实例网站：http://www.aiplat.com
 <br>##aiplat.com开源框架来自vue-cli
 <br>##cmui仓库为https://github.com/womendi/cmui.git
 <br>
