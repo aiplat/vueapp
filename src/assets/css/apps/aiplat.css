@@ -3,6 +3,106 @@
 //修 改 人：梁超明 womendi@qq.com
 //aiplat.css
 */
+/*vue-lazyload*/
+img[lazy=loading] {
+  background: url('../../images/commons/icon2.png') center no-repeat;
+  background-size: 100% 100%;
+}
+img[lazy=error] {
+  background: url('../../images/commons/loadingErr.png') center no-repeat;
+  background-size: 100% 100%;
+}
+/*vue-lazyload*/
+/*animate*/
+.animated {
+  -webkit-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  /*    animation: 0.3s linear;*/
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/*animate*/
+
 .top-fixed {background: #000000;overflow:hidden;position:fixed;top:0;z-index:999;width:100%;}
 .foot-fixed{overflow:hidden;position:fixed;bottom:0;z-index:999;width:100%;background:#fff;display:block;}
 .foot-fixed .active {color:rgb(253,20,20);background: rgba(105,104,103,0.14);}
@@ -139,4 +239,7 @@
 /* 默认一些公共图标 */
 .img_logo{
     background:url('../../images/icon.png') center no-repeat;
+}
+.metro_icon{
+    background:url('../../images/commons/metro_icon.png') center no-repeat;
 }

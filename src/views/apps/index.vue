@@ -3,7 +3,7 @@
     <m-title :title="title"></m-title>
     <div class="cm_pc_12 cm_mtb3">
         <div class="cm_pc_12 cm_mtb1">
-            <div class="img_logo cm_wh7 cm_bs100 cm_br305 cm_fc"></div>
+            <div class="metro_icon cm_wh7 cm_bs100 cm_fc"></div>
         </div>
         <ul class="cm_pc_12" v-for="(item,k2) in indexData">
             <li class="cm_pc_12 cm_prl05">
@@ -35,7 +35,7 @@ export default {
         "arr": [
           { "name": "web app", "url": "http://m.aiplat.com/metro","market":""},
           {"name": "安卓app下载","url": "http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5","market":"腾讯应用宝"},
-          {"name": "苹果app下载","url":"https://itunes.apple.com/us/app/%E4%BA%B2%E4%BF%A1%E5%9C%B0%E9%93%81/id1254451008?l=zh&ls=1&mt=8#","market":"appstore"}
+          {"name": "苹果app下载","url":"https://itunes.apple.com/cn/app/id1254451008","market":"appstore"}
         ]
       }]
     };

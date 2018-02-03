@@ -41,6 +41,5 @@
 <style>
     @import "assets/css/mine/cmreset.css";
     @import "assets/css/mine/cmstyle.css";
-    @import "assets/css/mine/vue.css";
     @import "assets/css/apps/aiplat.css";
 </style>

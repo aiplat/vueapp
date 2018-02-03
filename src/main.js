@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import VueRouter from 'vue-router/dist/vue-router.min';//vue-router
+import VueRouter from 'vue-router/dist/vue-router.min';
 import App from './app';
 
 import myPlugin from './plugins/myPlugin';
@@ -32,7 +32,7 @@ window.store = new Vuex.Store(storeOption);
 
 window.router = new VueRouter({
   routes: routes,
-  hashbang:true,//将路径格式化为#!开头,
+  hashbang:true,
   // mode:'history'
 });
 

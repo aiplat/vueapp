@@ -1,3 +1,4 @@
+
 /*
     Copyright (C) 2014 梁超明 版权所有。 
     文件名：cmstyle.css
@@ -1295,7 +1296,7 @@
   margin: 2.5em 0em !important;
 }
 .cm_mtb3 {
-  margin: 3em 0em !important;
+  margin: 3em 0em;
 }
 .cm_mtb305 {
   margin: 3.5em 0em !important;
@@ -1368,6 +1369,9 @@
 }
 .cm_mrl5 {
   margin: 0em 5em !important;
+}
+.cm_mt0 {
+  margin-top: 0em !important;
 }
 .cm_mt01 {
   margin-top: 0.1em !important;
