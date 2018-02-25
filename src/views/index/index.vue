@@ -36,7 +36,7 @@ export default {
     return {
       title: thisPage.title,
       indexData:{
-        "description":"ai智能空间,拥抱人工智能,明天会更好。目前潜心使用vue.js开发h5app:同时兼容wap、web、微信、android和ios,五个平台界面统一,功能一致,只有app有独立功能。",
+        "description":"ai智能空间,拥抱人工智能,明天会更好。目前潜心使用vue.js开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致,只有app有独立功能。",
         "gitName":"我的git",
         "gitUrl":"https://github.com/womendi",
         "cooperation": "商业合作",
