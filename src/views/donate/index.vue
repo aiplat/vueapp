@@ -1,23 +1,25 @@
 <template>
   <div class="cm_main2">
-    <m-title :title="title"></m-title>
-    <div class="cm_pc_12 cm_mtb3">
-            <ul class="cm_pc_12">
-            	<li class="cm_pc_12 cm_prl05 cm_lh105 cm_ti2 cm_mtb05">
-            	   <span class="">{{indexData.desc}}</span>
-                </li>
-            	<li class="cm_pc_12 cm_tc cm_mb05">
-            		<div class="cm_pc_6 cm_hl2" :class="{'cm_c1b cm_cf':indexData.dnid==k,'cm_be':indexData.dnid!=k}" @click="tsDN(k)" v-for="(v,k) in indexData.dnarr">{{v.name}}</div>
-            	</li>
-                <li class="cm_pc_12 cm_mb05" v-for="(v2,k2) in indexData.dnarr">
-		                <img class="cm_h17 cm_bs100 cm_fc" :src="v2.img" v-if="indexData.dnid==k2"/>
-                </li>
-                <li class="cm_pc_12 cm_prl05 cm_lh1 cm_ti2 cm_mb05">
-                 <span class="cm_fs08 cm_c1c">{{indexData.about}}</span>
-                </li>
-            </ul>
-        </div>
-    <m-footer></m-footer>
+    <div class="cm_main cm_pr">
+      <m-title :title="title"></m-title>
+      <div class="cm_pc_12 cm_mtb3">
+              <ul class="cm_pc_12">
+              	<li class="cm_pc_12 cm_prl05 cm_lh105 cm_ti2 cm_mtb05">
+              	   <span class="">{{indexData.desc}}</span>
+                  </li>
+              	<li class="cm_pc_12 cm_tc cm_mb05">
+              		<div class="cm_pc_6 cm_hl2" :class="{'cm_c1b cm_cf':indexData.dnid==k,'cm_be':indexData.dnid!=k}" @click="tsDN(k)" v-for="(v,k) in indexData.dnarr">{{v.name}}</div>
+              	</li>
+                  <li class="cm_pc_12 cm_mb05" v-for="(v2,k2) in indexData.dnarr">
+  		                <img class="cm_h17 cm_bs100 cm_fc" :src="v2.img" v-if="indexData.dnid==k2"/>
+                  </li>
+                  <li class="cm_pc_12 cm_prl05 cm_lh1 cm_ti2 cm_mb05">
+                   <span class="cm_fs08 cm_c1c">{{indexData.about}}</span>
+                  </li>
+              </ul>
+          </div>
+      <m-footer></m-footer>
+    </div>
   </div>
 </template>
 <script>

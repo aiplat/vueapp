@@ -6,7 +6,7 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
   entry: {
-    main: './src/main.js'
+    main: ['babel-polyfill','./src/main.js']
   },
   output: {
     path: config.build.assetsRoot,

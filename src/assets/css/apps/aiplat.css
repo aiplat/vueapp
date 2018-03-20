@@ -103,8 +103,22 @@ img[lazy=error] {
 }
 /*animate*/
 
-.top-fixed {background: #000000;overflow:hidden;position:fixed;top:0;z-index:999;width:100%;}
-.foot-fixed{overflow:hidden;position:fixed;bottom:0;z-index:999;width:100%;background:#fff;display:block;}
+.top-fixed {
+  overflow:hidden;
+  position:fixed;
+  top:0;
+  z-index:999;
+  width:100%;
+  display:block;
+}
+.foot-fixed{
+  overflow:hidden;
+  position:fixed;
+  bottom:0;
+  z-index:999;
+  width:100%;
+  display:block;
+}
 .foot-fixed .active {color:rgb(253,20,20);background: rgba(105,104,103,0.14);}
 @keyframes dtbom{
   0%{

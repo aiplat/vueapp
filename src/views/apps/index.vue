@@ -1,25 +1,27 @@
 <template>
   <div class="cm_main2">
-    <m-title :title="title"></m-title>
-    <div class="cm_pc_12 cm_mtb3">
-        <div class="cm_pc_12 cm_mtb1">
-            <div class="metro_icon cm_wh7 cm_bs100 cm_fc"></div>
-        </div>
-        <ul class="cm_pc_12" v-for="(item,k2) in indexData">
-            <li class="cm_pc_12 cm_prl05">
-                  <div class="cm_fl cm_prl05 cm_be cm_hl2 cm_mtb05 cm_br02">{{k2+1}}、{{item.name}}</div>
-            </li>
-            <li class="cm_pc_12 cm_pd05 cm_tc cm_be">
-                <div class="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce" v-for="(v,k) in item.arr">
-                    <a :href="v.url" :title="v.name" target="_blank">
-                      <div class="cmtou" v-if="v.market">{{v.market+'-'+v.name}}</div>
-                      <div class="cmtou" v-else>{{v.name}}</div>
-                    </a>
-                </div>
-            </li>
-        </ul>
+    <div class="cm_main cm_pr">
+      <m-title :title="title"></m-title>
+      <div class="cm_pc_12 cm_mtb3">
+          <div class="cm_pc_12 cm_mtb1">
+              <div class="metro_icon cm_wh7 cm_bs100 cm_fc"></div>
+          </div>
+          <ul class="cm_pc_12" v-for="(item,k2) in indexData">
+              <li class="cm_pc_12 cm_prl05">
+                    <div class="cm_fl cm_prl05 cm_be cm_hl2 cm_mtb05 cm_br02">{{k2+1}}、{{item.name}}</div>
+              </li>
+              <li class="cm_pc_12 cm_pd05 cm_tc cm_be">
+                  <div class="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce" v-for="(v,k) in item.arr">
+                      <a :href="v.url" :title="v.name" target="_blank">
+                        <div class="cmtou" v-if="v.market">{{v.market+'-'+v.name}}</div>
+                        <div class="cmtou" v-else>{{v.name}}</div>
+                      </a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <m-footer></m-footer>
     </div>
-    <m-footer></m-footer>
   </div>
 </template>
 <script>

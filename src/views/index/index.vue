@@ -1,29 +1,31 @@
 <template>
   <div class="cm_main2">
-    <m-title :title="title"></m-title>
-    <div class="cm_pc_12 cm_mtb3">
-          <ul class="cm_pc_12">
-              <li class="cm_pc_12 cm_mtb1">
-                <div class="img_logo cm_wh7 cm_bs100 cm_br305 cm_fc"></div>
-              </li>
-              <li class="cm_pc_12 cm_be cm_mb05">
-                <div class="cm_pc_12 cm_pd05 cm_bf cm_lh105 cm_ti2 cm_mb05">{{indexData.description}}</div>
-              </li>
-              <li class="cm_pc_12 cm_prl05 cm_tc">
-                  <div class="cm_w5 cm_prl05 cm_be cm_hl2">{{indexData.gitName}}</div>   
-              </li>
-              <li class="cm_pc_12 cm_prl05 cm_hl2 cm_ti2">
-                  <a v-bind:href="indexData.gitUrl" target="_blank">{{indexData.gitUrl}}</a>
-              </li>
-              <li class="cm_pc_12 cm_prl05 cm_tc">
-                  <div class="cm_w5 cm_prl05 cm_be cm_hl2">{{indexData.cooperation}}</div>   
-              </li>
-              <li class="cm_pc_12 cm_prl05 cm_hl2 cm_ti2">
-                  <a v-bind:href="toEmail" target="_blank">{{indexData.email}}</a>
-              </li>
-          </ul>
-      </div>
-    <m-footer></m-footer>
+    <div class="cm_main cm_pr">
+        <m-title :title="title"></m-title>
+        <div class="cm_pc_12 cm_mtb3">
+              <ul class="cm_pc_12">
+                  <li class="cm_pc_12 cm_mtb1">
+                    <div class="img_logo cm_wh7 cm_bs100 cm_br305 cm_fc"></div>
+                  </li>
+                  <li class="cm_pc_12 cm_be cm_mb05">
+                    <div class="cm_pc_12 cm_pd05 cm_bf cm_lh105 cm_ti2 cm_mb05">{{indexData.description}}</div>
+                  </li>
+                  <li class="cm_pc_12 cm_prl05 cm_tc">
+                      <div class="cm_w5 cm_prl05 cm_be cm_hl2">{{indexData.gitName}}</div>   
+                  </li>
+                  <li class="cm_pc_12 cm_prl05 cm_hl2 cm_ti2">
+                      <a v-bind:href="indexData.gitUrl" target="_blank">{{indexData.gitUrl}}</a>
+                  </li>
+                  <li class="cm_pc_12 cm_prl05 cm_tc">
+                      <div class="cm_w5 cm_prl05 cm_be cm_hl2">{{indexData.cooperation}}</div>   
+                  </li>
+                  <li class="cm_pc_12 cm_prl05 cm_hl2 cm_ti2">
+                      <a v-bind:href="toEmail" target="_blank">{{indexData.email}}</a>
+                  </li>
+              </ul>
+          </div>
+          <m-footer></m-footer>
+    </div>
   </div>
 </template>
 <script>
