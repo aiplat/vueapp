@@ -1,6 +1,6 @@
 <template>
    <footer class="foot-fixed"> 
-    <ul class="cm_main cm_pr cm_bt1ce cm_tc">
+    <ul class="cm_main cm_pr cm_bf cm_bt1ce cm_tc">
           <router-link tag="li" :to="vv.url" v-for="vv in items" class="cmt2" v-bind:class="{'active':$route.path==vv.url,'cm_c4c':$route.path!=vv.url,'cm_pc_3':items.length==4,'cm_pc_4':items.length==3,'cm_pc_6':items.length==2}">
               <div class="cm_wh105 cm_bs100 cm_fc cm_pr atimg">
                  <img :src="vv.imgon" class="cm_wh100 cm_bs100" v-if="$route.path==vv.url"/>
