@@ -1,8 +1,10 @@
 #vueapp
 <br>##vue2+vue-router+vuex+webpack+cmui
+<br>##适合开发各种webapp
 <br>##实例网站：http://www.aiplat.com
 <br>##aiplat.com开源框架来自vue-cli
 <br>##cmui仓库为https://github.com/womendi/cmui.git
+<br>
 <br>
 <br>
 <br>#指南
@@ -34,3 +36,9 @@
 <br>##$ npm run build
 <br>##整个项目代码打包到dist目录，打开其中index.html就是项目 首页
 <br>##布署到服务器，直接将dist目录中文件放在服务器根目录
+<br>
+<br>
+<br>#兼容性
+<br>##PC端兼容IE9及以上
+<br>##手机端兼容安卓与ios
+<br>##理论兼容一切可联网设备，比如TV等等
