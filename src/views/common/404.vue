@@ -12,20 +12,18 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import mTitle from 'components/aiplat/header2';
+import { mapState } from "vuex";
+import mTitle from "components/aiplat/header2";
 
 export default {
   data() {
     return {
-      title: 'ai智能空间-404',
-      message: '404 Not Found！'
+      title: "ai智能空间-404",
+      message: "404 Not Found！"
     };
   },
   mounted() {},
-  activated: function() {
-    
-  },
+  activated: function() {},
   components: { mTitle }
 };
 </script>

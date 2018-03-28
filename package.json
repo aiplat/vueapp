@@ -10,11 +10,12 @@
     "build-server": "node build/build-server.js"
   },
   "dependencies": {
+    "echarts": "^4.0.4",
+    "es6-promise": "^4.0.5",
     "vue": "^2.0.1",
-    "vuex": "^2.0.0",
     "vue-router": "^2.0.1",
-    "whatwg-fetch": "^1.0.0",
-    "es6-promise": "^4.0.5"
+    "vuex": "^2.0.0",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

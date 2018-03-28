@@ -4,7 +4,8 @@ const Index  = r => require(['views/index/index'], r);
 const Apps   = r => require(['views/apps/index'], r);
 //donate模块
 const Donate = r => require(['views/donate/index'], r);
-
+//test模块
+const Echarts = r => require(['views/test/echarts'], r);
 //页面路由
 const routes = [
   {path: '/',meta:{auth:false},components: {'default':Index}, name: 'index',title:'首页'},
@@ -12,6 +13,7 @@ const routes = [
   {path: '/index.html',redirect:'/'},
   {path: '/apps.html',meta:{auth:false},components: {'default':Apps}, name: 'apps',title:'APP下载'},
   {path: '/donate.html',meta:{auth:false},components: {'default':Donate}, name: 'donate',title:'捐赠我们'},
+  {path: '/test/echarts.html',meta:{auth:false},components: {'tsKeep':Echarts}, name: 'echarts',title:'echarts'},
 ];
 
 const NotFound = r => require(['views/common/404'], r);

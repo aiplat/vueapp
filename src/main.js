@@ -12,6 +12,10 @@ import routes from './routes';
 import FastClick from 'fastclick' 
 import VueLazyload from 'vue-lazyload'
 
+import utils from './plugins/utils'
+import echarts from 'echarts'
+
+
 Vue.config.productionTip = false
 
 Vue.use(Vuex);
@@ -27,6 +31,9 @@ Vue.use(VueLazyload, {
   attempt: 1,
   listenEvents: [ 'scroll', 'mousewheel' ]
 })
+
+utils(Vue);
+Vue.prototype.$echarts = echarts
 
 window.store = new Vuex.Store(storeOption);
 

@@ -753,6 +753,15 @@
 .cm_h20 {
   height: 20em !important;
 }
+.cm_h23{
+  height: 23em !important;
+}
+.cm_h25 {
+  height: 25em !important;
+}
+.cm_h29 {
+  height: 29em !important;
+}
 .cm_minh1 {
   min-height: 1em;
   height: auto!important;
@@ -2132,8 +2141,8 @@
 .cm_bb1ce {
   border-bottom: 1px solid #eeeeee !important;
 }
-.cm_bb2cf {
-  border-bottom: 2px solid #ffffff !important;
+.cm_bb1cf {
+  border-bottom: 1px solid #ffffff !important;
 }
 .cm_bb2c1 {
   border-bottom: 2px solid #ad44c6 !important;
