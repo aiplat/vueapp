@@ -3,8 +3,8 @@
 <br>##适合开发各种webapp
 <br>##aiplat.com开源框架来自vue-cli
 <br>##cmui仓库为https://github.com/womendi/cmui.git
-<br>##代码实例：http://www.aiplat.com
-<br>##应用网站 http://m.aiplat.com/metro
+<br>##代码实例：ai智能空间  http://www.aiplat.com
+<br>##应用网站：亲信地铁    http://m.aiplat.com/metro
 <br>
 <br>
 <br>
