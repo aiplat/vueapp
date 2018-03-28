@@ -5,7 +5,7 @@ const Apps   = r => require(['views/apps/index'], r);
 //donate模块
 const Donate = r => require(['views/donate/index'], r);
 //test模块
-const Echarts = r => require(['views/test/echarts'], r);
+const Echarts = r => require(['views/tests/echarts'], r);
 //页面路由
 const routes = [
   {path: '/',meta:{auth:false},components: {'default':Index}, name: 'index',title:'首页'},
