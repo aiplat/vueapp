@@ -2,7 +2,7 @@
   <div class="cm_main2">
     <div class="cm_main cm_pr">
       <m-title :title="title"></m-title>
-      <div class="cm_pc_12 cm_mtb3">
+      <div class="cm_pc_12 cm_mt3 cm_mb5">
               <ul class="cm_pc_12">
               	<li class="cm_pc_12 cm_prl05 cm_lh105 cm_ti2 cm_mtb05">
               	   <span class="">{{indexData.desc}}</span>

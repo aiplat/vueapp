@@ -2,7 +2,7 @@
   <div class="cm_main2">
     <div class="cm_main cm_pr">
         <m-title :title="title"></m-title>
-        <div class="cm_pc_12 cm_mtb3">
+        <div class="cm_pc_12 cm_mt3 cm_mb5">
               <ul class="cm_pc_12">
                   <li class="cm_pc_12 cm_mtb1">
                     <div class="img_logo cm_wh7 cm_bs100 cm_br305 cm_fc"></div>
