@@ -1,6 +1,6 @@
 <template>
   <div class="cm_main2">
-    <div class="cm_pc_12 cm_h001">
+    <div class="cm_h001" :class="{'cm_pc_12':this.$route.query.id=='qp','cm_main':this.$route.query.id!='qp'}">
         <div class="cm_pc_12 cm_h001">
               <ul class="cm_pc_12 cm_h001">
                   <li class="cm_pc_3 cm_mob_12 cm_h001 cm_b02" id="leftBlock">
