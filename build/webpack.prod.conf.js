@@ -23,7 +23,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   vue: {
     loaders: utils.cssLoaders({
       sourceMap: config.build.productionSourceMap,
-      extract: false
+      extract: true
     })
   },
   plugins: [

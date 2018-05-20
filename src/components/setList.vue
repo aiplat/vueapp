@@ -1,6 +1,6 @@
 <template>
    <ul class="row cm_be cm_pr">
-        <router-link tag="li" :to="vv.link" class="cm_pc_12 cm_bf cm_hl3 cm_br02" v-for="(vv,kk) in slist" :class="{'cm_mb05':vv.mb==1,'cm_bb1ce':vv.mb==0}">
+        <router-link tag="li" :to="vv.link" class="cm_pc_12 cm_bf cm_hl3 cm_br02" v-for="(vv,k) in slist" :class="{'cm_mb05':vv.mb==1,'cm_bb1ce':vv.mb==0}" v-bind:key="k">
             <div class="row cm_pr cmtou" :class="vv.ck">
               <span class="cm_pa cm_tl0 cm_wh2 cm_bs100 cm_m05" :class="vv.img" v-if="vv.imghide==0"></span> 
               <div class="row cm_pr7 cm_ts" :class="{'cm_pl05':vv.imghide==1,'cm_pl3':vv.imghide==0}">{{vv.title}}</div>

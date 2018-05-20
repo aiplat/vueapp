@@ -7,6 +7,7 @@
                     <div class="cm_pc_12 cm_prl05 cm_tc cm_hl3 cm_mtb1">{{message}}</div>
                 </div>
           </div>
+          <copyright2 isb0="1"></copyright2>
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@
 <script>
 import { mapState } from "vuex";
 import mTitle from "components/aiplat/header2";
+import copyright2 from "components/copyright";
 
 export default {
   data() {
@@ -24,6 +26,6 @@ export default {
   },
   mounted() {},
   activated: function() {},
-  components: { mTitle }
+  components: { mTitle,copyright2}
 };
 </script>

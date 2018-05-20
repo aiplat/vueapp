@@ -1,19 +1,14 @@
 //全局jquery
 window.jQuery = window.$ = require('jquery/dist/jquery.min.js');
 
-//全局cmweb
-var cmweb= require('./cmapp');
-window.cm= cmweb();
-//全局cmweb
+//全局cmapp
+window.cm= require('./cmapp')();
 
 //全局vue api
-var vueapi= require('./vueapi');
-window.va= vueapi();
-//全局vue api
+window.va= require('./vueapi')();
 
 //cookie
-var coki= require('./cookie');
-window.coki= coki();
+window.coki= require('./cookie')();
 
 // 输入框在虚拟键盘弹出时，自动滚动到可见位置
 document.body.addEventListener('click', function (event) {

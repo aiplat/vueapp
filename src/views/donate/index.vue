@@ -2,12 +2,12 @@
   <div class="cm_main2">
     <div class="cm_main cm_pr">
       <m-title :title="title"></m-title>
-      <div class="cm_pc_12 cm_mt3 cm_mb5">
+      <div class="cm_pc_12 cm_mt3 cm_mb6">
               <ul class="cm_pc_12">
               	<li class="cm_pc_12 cm_prl05 cm_lh105 cm_ti2 cm_mtb05">
               	   <span class="">{{indexData.desc}}</span>
                   </li>
-              	<li class="cm_pc_12 cm_tc cm_mb05">
+              	<li class="cm_pc_12 cm_prl05 cm_tc cm_mb05">
               		<div class="cm_pc_6 cm_hl2" :class="{'cm_c1b cm_cf':indexData.dnid==k,'cm_be':indexData.dnid!=k}" @click="tsDN(k)" v-for="(v,k) in indexData.dnarr" v-bind:key="k">{{v.name}}</div>
               	</li>
                   <li class="cm_pc_12 cm_mb05" v-for="(v2,k2) in indexData.dnarr" v-bind:key="k2">

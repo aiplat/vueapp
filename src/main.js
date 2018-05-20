@@ -13,8 +13,10 @@ import FastClick from 'fastclick'
 import VueLazyload from 'vue-lazyload'
 
 import utils from './plugins/utils'
-import echarts from 'echarts'
 
+//导入echarts打包后js体积变大，加载会很慢，不建议使用
+// import echarts from 'echarts'
+// Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
 
@@ -33,7 +35,7 @@ Vue.use(VueLazyload, {
 })
 
 utils(Vue);
-Vue.prototype.$echarts = echarts
+
 
 window.store = new Vuex.Store(storeOption);
 
@@ -60,12 +62,12 @@ router.beforeEach((to, from, next) => {
             if(store.state.isLogin!=LogSign){
               store.commit('isLogin',LogSign);
             }
-            next();
+            next()
         }else{
             next({path:'/mine/log'});
  　　　 } 
 　　}else{ 
-　　　　 next();
+　　　　next()
 　　}
 })
 

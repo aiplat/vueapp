@@ -1,5 +1,5 @@
 <template>
-  <div class="cm_d_b" id="appDIV">
+  <div class="womendi@qq.com" id="appDIV">
     <div class="cm_dn" id="cm_author" style="display:none">2</div>
     <keep-alive><router-view name="default" class=""></router-view></keep-alive>
     <transition name="custom-classes-transition" :enter-active-class="enterAnimate" :leave-active-class="leaveAnimate">
@@ -39,7 +39,7 @@
     }
 </script>
 <style>
-    @import "assets/css/mine/cmreset.css";
-    @import "assets/css/mine/cmstyle.css";
-    @import "assets/css/apps/aiplat.css";
+    @import "assets/css/lib/cmreset.css";
+    @import "assets/css/lib/cmstyle.css";
+    @import "assets/css/lib/aiplat.css";
 </style>

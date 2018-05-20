@@ -2,7 +2,7 @@
   <div class="cm_main2">
     <div class="cm_main cm_pr">
         <m-title :title="title"></m-title>
-        <div class="cm_pc_12 cm_mt3 cm_mb5">
+        <div class="cm_pc_12 cm_mt3 cm_mb6">
               <ul class="cm_pc_12">
                   <li class="cm_pc_12 cm_mtb1">
                     <div class="img_logo cm_wh7 cm_bs100 cm_br305 cm_fc"></div>
@@ -32,17 +32,16 @@
 import { mapState, mapActions } from "vuex";
 import mTitle from "components/aiplat/header1";
 import mFooter from "components/aiplat/footer1";
-import axios from "axios";
 export default {
   data() {
     return {
       title: thisPage.title,
       indexData: {
         description:
-          "ai智能空间,拥抱人工智能,明天会更好。目前潜心使用vue.js开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致,只有app有独立功能。您可以在手机与电脑同时打开aiplat.com，对比一下。",
+          "AI智能空间,拥抱人工智能,明天会更好。个人项目：跨平台app~《亲信地铁》，小程序~《娱乐计分器》。技术研究潜心使用vue.js开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致,只有app有独立功能。特别想使vuejs能够支持ie8。",
         gitName: "我的git",
         gitUrl: "https://github.com/womendi",
-        cooperation: "商业合作",
+        cooperation: "联系我们",
         email: "womendi@qq.com"
       }
     };

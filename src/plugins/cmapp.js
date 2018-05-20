@@ -532,12 +532,7 @@ module.exports = function () {
         cm.a.a = 'dhgfuryrirtrytutytuYAAADnRuK4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkJERDA2QzdGNUU2MTFFNkIxMzVEMTM0NTE0RjczNzQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkJERDA2QzhGNUU2MTFFNkIxMzVEMTM0NTE0RjczNzQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2QkREMDZDNUY1RTYxMUU2QjEzNUQxMzQ1MTRGNzM3NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2QkREMDZDNkY1RTYxMUU2QjEzNUQxMzQ1MTRGNzM3NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PktNEH8AAArlSURBVHja7J1bbBRVHMaXS1LkUiyRSxWhiaE1IE1kaQDlErAkSomJAYOAPqBopL4AGi4aIoYoFxPhxZUH5IWAQiA+yJoQGi/AA7EMJkWIbUNSUIPSBEIFYg2m/r/pOeU4zMzO7Hbp7M73JZttd2dnzp757f9yrv26uroSFJWt+rMKKAJEESCKAFEEiKIIEEWAKAJEESCKIkAUAaIIEEWAKIoAUQSIIkAUAaIoAkQRIIoAUQSIIkAURYAoAkQRIIoAURQBoggQRYAoAkRRBCicthy9uJa1QICyVvpc+7Kdx9tWsiYIUGh92XilFs8nWq8/y9ogQKF1sPGPN+UpeeVGZ0W6qb2GNUKAgrsuAQbgqH+TP7RcW8haIUChYh+Ao/8XN1bHWiFAgXT2Useos5c7ZjEjI0BZac+p3zaa1ke7MWWVKAIU3vrQChGgXKwPrRAByt360AoRIF/tbGjb5mN9/meFWv68VcIaI0B30/am9prWq7erAx6e3NVwaRuxIUBhrc9ddyeu7oeWa1VEhwAl0Fl6s/Pf4SE/Biv0IdGJOUCIZQ6e6e7zCvtZdHXsOfnbIuITY4BULOMFj1U+vOQInr2s0JeNV+qJT0wBwnCNTGn7V/VPLp4wanCT1/twfa983rSXAMVQ4n78Gg2tlTPHbsUfa2orNvhZIWRvcXdlsQOofv+FnT6BszV7Qll65ayxcF';
         cm.sli2(0, 1);
         cm.loadImg(0);
-        cm.bet2('.cmtou', 0, function (t) {
-            t.siblings().removeClass('cm_bddd');
-        }, function (t) {
-            t.siblings().removeClass('cm_bddd');
-        });
-        cm.bet2('.cmbe', 0);
+        cm.bet2('.cmtou', 0);
         cm.bet2('.cmt2', 1);
         cm.bet2('.cmtou2', 2);
         cm.stopCP();
@@ -556,13 +551,13 @@ module.exports = function () {
         cm.tme(div, function (t) {
             switch (tp) {
                 case 1:
-                    t.addClass('cm_o05');
+                    t.addClass('cm_o05').siblings().removeClass('cm_o05');
                     break;
                 case 2:
                     t.addClass('cm_c5b').siblings().removeClass('cm_c5b');
                     break;
                 default:
-                    t.addClass('cm_bddd');
+                    t.addClass('cm_bddd').siblings().removeClass('cm_bddd');
                     break;
             }
             if (typeof func1 == 'function') {

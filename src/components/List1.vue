@@ -1,6 +1,6 @@
 <template>
   <ul class="cm_pc_12 cm_bf">
-     <li class="cm_pc_12 cm_bb1ce cmt2" @click="toUrl(k)" v-for="(v,k) in Larr">
+     <li class="cm_pc_12 cm_bb1ce cmt2" @click="toUrl(k)" v-for="(v,k) in Larr"  v-bind:key="k">
        <div class="cm_pa cm_tl0" v-if="v.isLimg==1">
            <img v-lazy="v.Limg" class="cm_fl cm_wh2 cm_bs100 cm_m05" />
        </div>
