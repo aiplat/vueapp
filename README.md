@@ -18,7 +18,7 @@
  - src             ------代码主体目录
  - --- api         ------静态json目录
  - --- assets      ------静态css、images文件目录
- - --- components  ------react公共组件目录
+ - --- components  ------公共组件目录
  - --- plugins     ------公共函数或插件目录
  - --- routes      ------路由配置目录
  - --- views       ------路由对应页面视图目录
