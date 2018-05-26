@@ -41,8 +41,7 @@ export default {
             { name: "跨平台网址-webApp", url: "http://m.aiplat.com/metro", market: "" },
             {
               name: "安卓App下载",
-              url:
-                "http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5",
+              url:"http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5",
               market: "腾讯应用宝"
             },
             {
@@ -66,7 +65,7 @@ export default {
       if(!url){
         return;
       }
-      if(url=='weixin://'&&!cm.app.iswx){
+      if(url=='weixin://'&&cm.isMob()==0){
         cm.upts('请在手机浏览器点击打开微信');
         return;
       }
