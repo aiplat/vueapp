@@ -37,7 +37,7 @@ export default {
     return {
       title: thisPage.title,
       indexData: {
-        description:"AI智能空间,拥抱人工智能,明天会更好。个人项目：跨平台app~《亲信地铁》，小程序~《娱乐计分器》。技术研究潜心使用vue.js开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致,只有app有独立功能。已通过vue-cli改为自己的vueapp,也很想这能够支持IE8。为了兼容IE8,更改了express和reactjs分别做了多页面应用和单页面应用,均可支持IE8。详见我的github开源，代表分别为vueapp、express-multipage、reactjs-ie8。",
+        description:"AI智能空间,拥抱人工智能,明天会更好。个人项目：跨平台app~《亲信地铁》，小程序~《娱乐计分器》。技术研究潜心使用vue.js开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致,只有app有独立功能。已通过vue-cli改为自己的vueapp,也很想这能够支持IE8。为了兼容IE8,更改了express和reactjs分别做了多页面应用和单页面应用,均可支持IE8。详见我的github开源代表作分别为vueapp、express-multipage、reactjs-ie8。",
         gitName: "我的git",
         gitUrl: "https://github.com/womendi",
         cooperation: "联系我们",
