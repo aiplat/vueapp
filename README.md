@@ -7,6 +7,24 @@
 <br>##跨平台应用：腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
 <br>
 <br>
+#代码目录结构--与vueapp类似
+
+ - build           ------webpack配置目录
+ - config          ------webpack打包配置目录
+ - mock            ------mock配置目录
+ - src             ------代码主体目录
+ - --- api         ------静态json目录
+ - --- assets      ------静态css、images文件目录
+ - --- components  ------react公共组件目录
+ - --- plugins     ------公共函数或插件目录
+ - --- routes      ------路由配置目录
+ - --- views       ------路由对应页面视图目录
+ - --- vuex        ------vuex，store目录
+ - --- app.vue     ------应用承载文件
+ - --- main.js     ------应用入口文件
+ - static          ------静态资源目录
+ - index.html      ------单页面应用公共html入口文件
+<br>
 <br>
 <br>#指南
 <br>
