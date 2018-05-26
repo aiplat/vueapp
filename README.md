@@ -1,6 +1,6 @@
 # vueapp
-## vue2+vue-router+vuex+webpack+cmui
-## 适合开发各种webapp
+ - vue2+vue-router+vuex+webpack+cmui
+ - 适合开发各种webapp
  - aiplat.com开源框架来自vue-cli
  - cmui仓库为https://github.com/womendi/cmui.git
  - 代码实例：ai智能空间  http://www.aiplat.com 
@@ -25,40 +25,34 @@
  - --- main.js     ------应用入口文件
  - static          ------静态资源目录
  - index.html      ------单页面应用公共html入口文件
-<br>
-<br>
-<br>#指南
-<br>
-<br>#clone
-<br>##$ git clone https://github.com/womendi/vueapp.git
-<br>
-<br>
-<br>#安装依赖
-<br>##$ cd vueapp
-<br>##$ npm install -g cnpm --registry=https://registry.npm.taobao.org
-<br>##$ cnpm install
-<br>###或者cd之后直接$  npm  install
-<br>
-<br>
-<br>#开发模式(实时刷新)
-<br>##$ npm run dev
-<br>
-<br>Listening on http://本机ip:3003
-<br>Run successfully.
-<br>最后看到以下这句 表示webpack编译成功
-<br>webpack: Compiled successfully.
-<br>
-<br>##打开 http://localhost:3003
-<br>##或打开 http://本机ip:3003，方便手机在局域网访问
-<br>
-<br>
-<br>#打包项目
-<br>##$ npm run build
-<br>##整个项目代码打包到dist目录，打开其中index.html就是项目 首页
-<br>##布署到服务器，直接将dist目录中文件放在服务器根目录
-<br>
-<br>
-<br>#兼容性
-<br>##PC端兼容IE9及以上
-<br>##手机端兼容安卓与ios，不区分机型
-<br>##兼容一切可联网设备，比如TV等等,不区分尺寸大小
+
+---
+
+# clone
+ - $ git clone https://github.com/womendi/vueapp.git
+
+# 安装依赖
+ - $ cd vueapp
+ - $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+ - $ cnpm install
+ - 或者cd之后直接$  npm  install
+
+# 开发模式(实时刷新)
+ - $ npm run dev
+ - Listening on http://本机ip:3003
+ - Run successfully.
+ - 最后看到以下这句 表示webpack编译成功
+ - webpack: Compiled successfully.
+ - 
+ - 打开 http://localhost:3003
+ - 或打开 http://本机ip:3003，方便手机在局域网访问
+
+# 打包项目
+ - $ npm run build
+ - 整个项目代码打包到dist目录，打开其中index.html就是项目 首页
+ - 布署到服务器，直接将dist目录中文件放在服务器根目录
+
+# 兼容性
+ - PC端兼容IE9及以上
+ - 手机端兼容安卓与ios，不区分机型
+ - 兼容一切可联网设备，比如TV等等,不区分尺寸大小
