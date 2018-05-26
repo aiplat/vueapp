@@ -1,13 +1,13 @@
-#vueapp
-<br>##vue2+vue-router+vuex+webpack+cmui
-<br>##适合开发各种webapp
-<br>##aiplat.com开源框架来自vue-cli
-<br>##cmui仓库为https://github.com/womendi/cmui.git
-<br>##代码实例：ai智能空间  http://www.aiplat.com 
-<br>##跨平台应用：腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
+# vueapp
+## vue2+vue-router+vuex+webpack+cmui
+## 适合开发各种webapp
+## aiplat.com开源框架来自vue-cli
+## cmui仓库为https://github.com/womendi/cmui.git
+## 代码实例：ai智能空间  http://www.aiplat.com 
+## 跨平台应用：腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
 <br>
 <br>
-#代码目录结构--与vueapp类似
+# 代码目录结构
 
  - build           ------webpack配置目录
  - config          ------webpack打包配置目录
