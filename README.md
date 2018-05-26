@@ -12,6 +12,7 @@
 
  - build           ------webpack配置目录
  - config          ------webpack打包配置目录
+ - dist            ------npm run build后实际布署代码目录
  - mock            ------mock配置目录
  - src             ------代码主体目录
  - --- api         ------静态json目录
