@@ -838,7 +838,7 @@ module.exports = function () {
         //cm.app.iswx=1;
         var div2=div?div:'#WXtitle';
         if (cm.app.iswx) {
-            $(div2).next().addClass('cm_mt0');
+            $(div2).next().removeClass('cm_mt3').addClass('cm_mt0');
             $(div2).remove();
         }
     }
