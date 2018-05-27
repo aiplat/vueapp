@@ -8,8 +8,8 @@
               <div class="metro_icon cm_wh7 cm_bs100 cm_fc"></div>
           </li>
           <li class="cm_pc_12">
-            <ul class="cm_pc_12" v-for="(item,k2) in indexData" v-bind:key="k2">
-                <li class="cm_pc_12 cm_prl05">
+            <ul class="cm_pc_12 cm_prl05" v-for="(item,k2) in indexData" v-bind:key="k2">
+                <li class="cm_pc_12">
                       <div class="cm_fl cm_prl05 cm_be cm_hl2 cm_mtb05 cm_br02">{{k2+1}}、{{item.name}}</div>
                 </li>
                 <li class="cm_pc_12 cm_pd05 cm_tc cm_be">
