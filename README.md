@@ -16,7 +16,6 @@
  - dist            ------npm run build后实际布署代码目录
  - mock            ------mock配置目录
  - src             ------代码主体目录
- - --- api         ------静态json目录
  - --- assets      ------静态css、images文件目录
  - --- components  ------公共组件目录
  - --- plugins     ------公共函数或插件目录
