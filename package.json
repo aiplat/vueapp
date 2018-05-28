@@ -10,7 +10,6 @@
     "eslint": "eslint --color --fix --ext .html,.js,.vue ./"
   },
   "dependencies": {
-    "echarts": "^4.0.4",
     "es6-promise": "^4.0.5",
     "vue": "^2.0.1",
     "vue-router": "^2.0.1",
