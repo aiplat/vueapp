@@ -35,9 +35,7 @@
 
 # 安装依赖
  - $ cd vueapp
- - $ npm install -g cnpm --registry=https://registry.npm.taobao.org
- - $ cnpm install
- - 或者cd之后直接$  npm  install
+ - $ npm install
 
 # 开发模式(实时刷新)
  - $ npm run dev
@@ -57,6 +55,17 @@
  - $ npm run build
  - 整个项目代码打包到dist目录，打开其中index.html就是项目 首页
  - 布署到服务器，直接将dist目录中文件放在服务器根目录
+
+---
+
+#命令替换
+
+## 可用cnpm代替npm
+ - $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+ - 然后所有npm * 可用 cnpm *代替 
+
+## 可用yarn代替npm
+ - 然后所有npm * 可用 yarn具体代码代替 
 
 ---
 
