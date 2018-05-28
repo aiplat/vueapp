@@ -23,25 +23,25 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from "vuex";
-import mTitle from "components/aiplat/header1";
-import mFooter from "components/aiplat/footer1";
+import { mapState, mapActions } from 'vuex';
+import mTitle from 'components/aiplat/header1';
+import mFooter from 'components/aiplat/footer1';
 export default {
   data() {
     return {
       title: thisPage.title,
       indexData: {
-        desc:"非常感谢各位对ai智能空间的无偿捐赠,ai智能空间将会持续开发更多更好的应用。",
-        about:"特别说明:以下收款二维码仅在全球唯一网站aiplat.com有效,对于全球其他地方或网站出现的均是假冒的。",
+        desc:'非常感谢各位对ai智能空间的无偿捐赠,ai智能空间将会持续开发更多更好的应用。',
+        about:'特别说明:以下收款二维码仅在全球唯一网站aiplat.com有效,对于全球其他地方或网站出现的均是假冒的。',
         dnid: 0,
         dnarr: [
           {
-            name: "微信收款",
-            img: require("../../assets/images/aiplat/index/donateWX.png")
+            name: '微信收款',
+            img: require('../../assets/images/aiplat/index/donateWX.png')
           },
           {
-            name: "支付宝收款",
-            img: require("../../assets/images/aiplat/index/donateZFB.png")
+            name: '支付宝收款',
+            img: require('../../assets/images/aiplat/index/donateZFB.png')
           }
         ]
       }
@@ -51,7 +51,7 @@ export default {
     tsDN: function(id) {
       this.indexData.dnid = id;
     },
-    ...mapActions(["pushToBaidu", "getDonate"])
+    ...mapActions(['pushToBaidu', 'getDonate'])
   },
   mounted() {
     var t = this;

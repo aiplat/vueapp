@@ -34,18 +34,18 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from "vuex";
-import mTitle from "components/aiplat/header1";
-import mFooter from "components/aiplat/footer1";
+import { mapState, mapActions } from 'vuex';
+import mTitle from 'components/aiplat/header1';
+import mFooter from 'components/aiplat/footer1';
 export default {
   data() {
     return {
       title: thisPage.title,
       indexData: {
-        description:"AI智能空间,拥抱人工智能,明天会更好。个人项目:跨平台app~《亲信地铁》、小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致。详见应用展示。",
-        gitName: "我的github",
-        gitUrl: "github.com/womendi",
-        gitUrl2: "https://github.com/womendi",
+        description:'AI智能空间,拥抱人工智能,明天会更好。个人项目:跨平台app~《亲信地铁》、小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致。详见应用展示。',
+        gitName: '我的github',
+        gitUrl: 'github.com/womendi',
+        gitUrl2: 'https://github.com/womendi',
         gitList:[{
           name:'cmui',
           desc:'自己写的跨平台css3框架',
@@ -63,19 +63,19 @@ export default {
           desc:'改写react兼容IE8的跨平台框架',
           url:'https://github.com/womendi/react-app-ie8'
         }],
-        cooperation: "联系我",
-        email: "womendi@qq.com"
+        cooperation: '联系我',
+        email: 'womendi@qq.com'
       }
     };
   },
   methods: {
     toEmail() {
-      return "mailto:" + this.indexData.email;
+      return 'mailto:' + this.indexData.email;
     },
-    ...mapActions(["pushToBaidu", "getIndex"])
+    ...mapActions(['pushToBaidu', 'getIndex'])
   },
   computed: {
-    
+
   },
   mounted() {
     var t = this;

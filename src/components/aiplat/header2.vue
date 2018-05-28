@@ -10,15 +10,15 @@
 </template>
 <script>
 export default {
-  props: ["title"],
+  props: ['title'],
   data() {
     return {
-      back2: require("../../assets/images/commons/cm_back2.png")
+      back2: require('../../assets/images/commons/cm_back2.png')
     };
   },
   methods: {
     routerBack() {
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: '/' });
     }
   },
   mounted() {

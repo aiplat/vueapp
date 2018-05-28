@@ -13,15 +13,15 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import mTitle from "components/aiplat/header2";
-import copyright2 from "components/copyright";
+import { mapState } from 'vuex';
+import mTitle from 'components/aiplat/header2';
+import copyright2 from 'components/copyright';
 
 export default {
   data() {
     return {
-      title: "ai智能空间-404",
-      message: "404 Not Found！"
+      title: 'ai智能空间-404',
+      message: '404 Not Found！'
     };
   },
   mounted() {},

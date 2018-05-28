@@ -27,42 +27,42 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from "vuex";
-import mTitle from "components/aiplat/header1";
-import mFooter from "components/aiplat/footer1";
+import { mapState, mapActions } from 'vuex';
+import mTitle from 'components/aiplat/header1';
+import mFooter from 'components/aiplat/footer1';
 export default {
   data() {
     return {
       title: thisPage.title,
       indexData: [
         {
-          name: "亲信地铁",
+          name: '亲信地铁',
           arr: [
             {
-              name: "跨平台网址-webApp",
-              url: "http://m.aiplat.com/metro",
-              market: ""
+              name: '跨平台网址-webApp',
+              url: 'http://m.aiplat.com/metro',
+              market: ''
             },
             {
-              name: "安卓App下载",
+              name: '安卓App下载',
               url:
-                "http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5",
-              market: "腾讯应用宝"
+                'http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5',
+              market: '腾讯应用宝'
             },
             {
-              name: "苹果App下载",
-              url: "https://itunes.apple.com/cn/app/id1254451008",
-              market: "appstore"
+              name: '苹果App下载',
+              url: 'https://itunes.apple.com/cn/app/id1254451008',
+              market: 'appstore'
             }
           ]
         },
         {
-          name: "娱乐计分器",
+          name: '娱乐计分器',
           arr: [
             {
-              name: "微信小程序-搜索‘娱乐计分器’",
-              url: "weixin://",
-              market: ""
+              name: '微信小程序-搜索‘娱乐计分器’',
+              url: 'weixin://',
+              market: ''
             }
           ]
         }
@@ -74,13 +74,13 @@ export default {
       if (!url) {
         return;
       }
-      if (url == "weixin://" && cm.isMob() == 0) {
-        cm.upts("请在手机浏览器点击打开微信");
+      if (url == 'weixin://' && cm.isMob() == 0) {
+        cm.upts('请在手机浏览器点击打开微信');
         return;
       }
       window.location = url;
     },
-    ...mapActions(["pushToBaidu", "getApps"])
+    ...mapActions(['pushToBaidu', 'getApps'])
   },
   mounted() {
     var t = this;

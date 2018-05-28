@@ -29,45 +29,45 @@ var app2 = {
     return {
       items: [
         {
-          name: "首页",
-          url: "/",
-          img: require("../../assets/images/aiplat/footer/sy_01.png"),
-          imgon: require("../../assets/images/aiplat/footer/sy_01on.png")
+          name: '首页',
+          url: '/',
+          img: require('../../assets/images/aiplat/footer/sy_01.png'),
+          imgon: require('../../assets/images/aiplat/footer/sy_01on.png')
         },
         {
-          name: "应用展示",
-          url: "/apps.html",
-          img: require("../../assets/images/aiplat/footer/sy_03.png"),
-          imgon: require("../../assets/images/aiplat/footer/sy_03on.png")
+          name: '应用展示',
+          url: '/apps.html',
+          img: require('../../assets/images/aiplat/footer/sy_03.png'),
+          imgon: require('../../assets/images/aiplat/footer/sy_03on.png')
         },
         {
-          name: "捐赠我们",
-          url: "/donate.html",
-          img: require("../../assets/images/aiplat/footer/sy_04.png"),
-          imgon: require("../../assets/images/aiplat/footer/sy_04on.png")
+          name: '捐赠我们',
+          url: '/donate.html',
+          img: require('../../assets/images/aiplat/footer/sy_04.png'),
+          imgon: require('../../assets/images/aiplat/footer/sy_04on.png')
         }
       ],
       arr: [
-        { name: "web app", url: "http://m.aiplat.com/metro" },
+        { name: 'web app', url: 'http://m.aiplat.com/metro' },
         {
-          name: "亲信地铁android版下载",
-          url: "http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5"
+          name: '亲信地铁android版下载',
+          url: 'http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5'
         },
         {
-          name: "亲信地铁ios版下载",
+          name: '亲信地铁ios版下载',
           url:
-            "https://itunes.apple.com/us/app/%E4%BA%B2%E4%BF%A1%E5%9C%B0%E9%93%81/id1254451008?l=zh&ls=1&mt=8#"
+            'https://itunes.apple.com/us/app/%E4%BA%B2%E4%BF%A1%E5%9C%B0%E9%93%81/id1254451008?l=zh&ls=1&mt=8#'
         },
-        { name: "微信小程序-搜索‘娱乐计分器’", url: "weixin://",}
+        { name: '微信小程序-搜索‘娱乐计分器’', url: 'weixin://'}
       ],
       site: {
-        name: "aiplat.com",
-        url: "http://www.aiplat.com",
-        copyright: "©2016"
+        name: 'aiplat.com',
+        url: 'http://www.aiplat.com',
+        copyright: '©2016'
       },
       beian: {
-        name: "粤ICP备16011379号-2",
-        url: "http://www.miibeian.gov.cn"
+        name: '粤ICP备16011379号-2',
+        url: 'http://www.miibeian.gov.cn'
       }
     };
   },

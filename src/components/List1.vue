@@ -39,7 +39,7 @@
           return;
         }
     		window.location = url;
-    	} 
+    	}
     },
     components: {},
     mounted(){
@@ -50,7 +50,7 @@
       cm.loadImg(0);
     },
     deactivated:function(){
-       
+  
     }
   }
 </script>

@@ -19,11 +19,11 @@
   	props:['Larr'],
     data () {
       return {
-      	 
+  
       }
     },
     methods:{
- 
+
     },
     components: {},
     mounted(){
@@ -33,7 +33,7 @@
 
     },
     deactivated:function(){
-       
+  
     }
   }
 </script>
