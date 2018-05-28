@@ -36,7 +36,7 @@ module.exports = {
     "no-cond-assign": 2,
     "no-const-assign": 2,
     "no-delete-var": 2,
-    "no-dupe-keys": 2,
+    "no-dupe-keys": 0,
     "no-duplicate-case": 2,
     "no-dupe-args": 2,
     "no-empty": 2,
@@ -54,7 +54,11 @@ module.exports = {
     "no-mixed-spaces-and-tabs": 0,
     "prefer-arrow-callback": 0,
     "arrow-parens": 0,
-    "arrow-spacing": 0
+    "arrow-spacing": 0,
+    "valid-typeof":0,
+    "no-compare-neg-zero":0,
+    "no-useless-escape":0,
+    "no-empty-pattern":0
   },
   "settings": {
       "import/ignore": [

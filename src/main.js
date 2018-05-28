@@ -46,20 +46,20 @@ window.router = new VueRouter({
 
 var LogSign = 'Loging'
 window.thisPage = ''
-router.beforeEach((to, from, next) => {
+window.router.beforeEach((to, from, next) => {
   var len = routes.length
   for (var i = 0; i < len; i++) {
     if (routes[i].path == to.path) {
-      document.title = Mconf.name + '-' + routes[i].title
+      document.title = window.Mconf.name + '-' + routes[i].title
       window.thisPage = routes[i]
       break
     }
   }
   // 登录验证
   if (to.matched.some(m => m.meta.auth)) {
-    if (store.state.isLogin == LogSign || cm.getLS('isLogin') == LogSign) {
-      if (store.state.isLogin != LogSign) {
-        store.commit('isLogin', LogSign)
+    if (window.store.state.isLogin == LogSign || window.cm.getLS('isLogin') == LogSign) {
+      if (window.store.state.isLogin != LogSign) {
+        window.store.commit('isLogin', LogSign)
       }
       next()
     } else {
@@ -70,6 +70,8 @@ router.beforeEach((to, from, next) => {
   }
 })
 
+const router = window.router
+const store = window.store
 window.cmApp = new Vue({
   el: '#app',
   router,

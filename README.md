@@ -50,6 +50,9 @@
  - 打开 http://localhost:3003
  - 或打开 http://本机ip:3003，方便手机在局域网访问
 
+# eslint检测代码
+ - $ npm run eslint
+
 # 打包项目
  - $ npm run build
  - 整个项目代码打包到dist目录，打开其中index.html就是项目 首页

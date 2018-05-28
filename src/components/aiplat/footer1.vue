@@ -72,7 +72,7 @@ var app2 = {
     };
   },
   mounted() {
-    cm.lei2();
+    window.cm.lei2();
   }
 };
 export default app2;

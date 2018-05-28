@@ -1,9 +1,9 @@
 module.exports = (Vue) => {
   Vue.filter('toDate', (v) => {
-    return cm.nowTime(1, v * 1000)
+    return window.cm.nowTime(1, v * 1000)
   })
   Vue.filter('toTime', (v) => {
-    return cm.nowTime(0, v)
+    return window.cm.nowTime(0, v)
   })
   Vue.filter('fgDian', (v) => {
     v = v + ''
@@ -24,7 +24,7 @@ module.exports = (Vue) => {
   })
   Vue.filter('fix2', (v) => {
     var a = v + ''
-    cm.cl(a.split('.'))
+    window.cm.cl(a.split('.'))
     return v.toFixed(2)
   })
   Vue.filter('fix8', (v) => {

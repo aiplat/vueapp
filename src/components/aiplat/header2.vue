@@ -22,7 +22,7 @@ export default {
     }
   },
   mounted() {
-    //cm.setWXH();
+    //window.cm.setWXH();
   }
 };
 </script>

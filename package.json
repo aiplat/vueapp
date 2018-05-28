@@ -8,7 +8,7 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "build-server": "node build/build-server.js",
-    "eslint": "eslint --color --fix --ext .js,.vue src"
+    "eslint": "eslint --color --fix --ext .html,.js,.vue ./"
   },
   "dependencies": {
     "echarts": "^4.0.4",

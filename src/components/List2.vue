@@ -27,7 +27,7 @@
     },
     components: {},
     mounted(){
-      cm.bet2('.cmt2', 1);
+      window.cm.bet2('.cmt2', 1);
     },
     activated:function(){
 

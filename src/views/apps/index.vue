@@ -27,13 +27,13 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from 'vuex';
+import {  mapActions } from 'vuex';
 import mTitle from 'components/aiplat/header1';
 import mFooter from 'components/aiplat/footer1';
 export default {
   data() {
     return {
-      title: thisPage.title,
+      title: window.thisPage.title,
       indexData: [
         {
           name: '亲信地铁',
@@ -74,8 +74,8 @@ export default {
       if (!url) {
         return;
       }
-      if (url == 'weixin://' && cm.isMob() == 0) {
-        cm.upts('请在手机浏览器点击打开微信');
+      if (url == 'weixin://' && window.cm.isMob() == 0) {
+        window.cm.upts('请在手机浏览器点击打开微信');
         return;
       }
       window.location = url;
@@ -85,11 +85,11 @@ export default {
   mounted() {
     var t = this;
     t.pushToBaidu();
-    cm.setWXH();
+    window.cm.setWXH();
   },
   components: { mTitle, mFooter },
   activated: function() {
-    cm.sli2(0, 1);
+    window.cm.sli2(0, 1);
   },
   deactivated: function() {}
 };

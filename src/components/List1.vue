@@ -43,11 +43,11 @@
     },
     components: {},
     mounted(){
-      cm.loadImg(0);
-      cm.bet2('.cmt2', 1);
+      window.cm.loadImg(0);
+      window.cm.bet2('.cmt2', 1);
     },
     activated:function(){
-      cm.loadImg(0);
+      window.cm.loadImg(0);
     },
     deactivated:function(){
   

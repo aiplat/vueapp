@@ -21,6 +21,9 @@ module.exports = function () {
   cm.app.iswx = cm.c.ua.match(/MicroMessenger/i) == 'micromessenger' ? 1 : 0
   cm.app.isapp = cm.c.ua.match(/html5plus/i) == 'html5plus' ? 1 : 0
   cm.cl = function (txt) {
+    if(typeof txt == 'object'){
+        txt = JSON.stringify(txt);
+    }
     console.log('time:' + cm.nowTime() + '-->' + txt)
   }
   cm.c.clid = window.localStorage['cl']
@@ -35,7 +38,7 @@ module.exports = function () {
       data: data,
       type: type,
       dataType: dt,
-      cache: true,
+      cache: false,
       async: true,
       timeout: 20000,
       beforeSend: function () {
@@ -93,22 +96,26 @@ module.exports = function () {
   }
   cm.upfile = function (fileid, ckid, tarid, func, url) {
     cm.ck(ckid, function (t) {
+      cm.cl(t);
       $(fileid).trigger('click')
     })
     cm.ck(fileid, function (t) {
+      cm.cl(t);
       cm.upts('上传中,请稍候..', 1)
       url = url || cm.api.upimg
       cm.ajaxUp(fileid, url, function (res) {
         cm.f2Back(res, function (t) {
-          cm.upts(res.msg)
+          cm.upts(t.msg)
           $(tarid).attr('src', cm.api.i + res.list.img)
-          func(res)
+          func(t)
         }, function (t) {
-          cm.upts(res.msg)
+          cm.upts(t.msg)
         })
       }, function (res) {
+        cm.cl(res);
         cm.upts('上传失败')
       })
+
     }, 1)
   }
   cm.f2Back = function (res, func1, func2) {
@@ -143,7 +150,7 @@ module.exports = function () {
   cm.nowTime = function (nd, tp, f, str) {
     var n = new Date()
     if (nd != '' && tp == 1) {
-      if (typeof nd !== 'int') {
+      if (typeof(nd) !== 'int') {
         if (!str) {
           nd = parseInt(nd)
           nd *= 1000
@@ -233,7 +240,7 @@ module.exports = function () {
     }
   }
   cm.isUname = function (val) {
-    var regC = new RegExp('^[\u4e00-\u9fa5]{3,12}$')
+    //var regC = new RegExp('^[\u4e00-\u9fa5]{3,12}$')
     var regN = new RegExp('^[\w\u4e00-\u9fa5]+$')
     if (!val) {
       val = '用户名不能为空'
@@ -365,7 +372,7 @@ module.exports = function () {
   cm.sfz = function (idcard) {
     var Errors = new Array(1, '身份证号码位数不对', '出生日期错误', '身份证号码错误', '身份证地区非法')
     var area = { 11: '北京', 12: '天津', 13: '河北', 14: '山西', 15: '内蒙古', 21: '辽宁', 22: '吉林', 23: '黑龙江', 31: '上海', 32: '江苏', 33: '浙江', 34: '安徽', 35: '福建', 36: '江西', 37: '山东', 41: '河南', 42: '湖北', 43: '湖南', 44: '广东', 45: '广西', 46: '海南', 50: '重庆', 51: '四川', 52: '贵州', 53: '云南', 54: '西藏', 61: '陕西', 62: '甘肃', 63: '青海', 64: '宁夏', 65: 'xinjiang', 71: '台湾', 81: '香港', 82: '澳门', 91: '国外' }
-    var idcard, Y, JYM
+    var Y, JYM
     var S, M, ereg, Err
     var idcard_array = new Array()
     idcard_array = idcard.split('')
@@ -385,7 +392,6 @@ module.exports = function () {
         } else {
           Err = Errors[2]
         }
-        return Err
         break
       case 18:
         if (parseInt(idcard.substr(6, 4)) % 4 == 0 || (parseInt(idcard.substr(6, 4)) % 100 == 0 && parseInt(idcard.substr(6, 4)) % 4 == 0)) {
@@ -407,13 +413,12 @@ module.exports = function () {
         } else {
           Err = Errors[2]
         }
-        return Err
         break
       default:
         Err = Errors[1]
-        return Err
         break
     }
+    return Err
   }
   cm.ck = function (id, func, tp, ise) {
     cm.a.a = 'dgfhjhfgjdghtyutyYAAADnRuK4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkJERDA2QzdGNUU2MTFFNkIxMzVEMTM0NTE0RjczNzQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkJERDA2QzhGNUU2MTFFNkIxMzVEMTM0NTE0RjczNzQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2QkREMDZDNUY1RTYxMUU2QjEzNUQxMzQ1MTRGNzM3NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2QkREMDZDNkY1RTYxMUU2QjEzNUQxMzQ1MTRGNzM3NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PktNEH8AAArlSURBVHja7J1bbBRVHMaXS1LkUiyRSxWhiaE1IE1kaQDlErAkSomJAYOAPqBopL4AGi4aIoYoFxPhxZUH5IWAQiA+yJoQGi/AA7EMJkWIbUNSUIPSBEIFYg2m/r/pOeU4zMzO7Hbp7M73JZttd2dnzp757f9yrv26uroSFJWt+rMKKAJEESCKAFEEiKIIEEWAKAJEESCKIkAUAaIIEEWAKIoAUQSIIkAUAaIoAkQRIIoAUQSIIkAURYAoAkQRIIoAURQBoggQRYAoAkRRBCicthy9uJa1QICyVvpc+7Kdx9tWsiYIUGh92XilFs8nWq8/y9ogQKF1sPGPN+UpeeVGZ0W6qb2GNUKAgrsuAQbgqH+TP7RcW8haIUChYh+Ao/8XN1bHWiFAgXT2Useos5c7ZjEjI0BZac+p3zaa1ke7MWWVKAIU3vrQChGgXKwPrRAByt360AoRIF/tbGjb5mN9/meFWv68VcIaI0B30/am9prWq7erAx6e3NVwaRuxIUBhrc9ddyeu7oeWa1VEhwAl0Fl6s/Pf4SE/Biv0IdGJOUCIZQ6e6e7zCvtZdHXsOfnbIuITY4BULOMFj1U+vOQInr2s0JeNV+qJT0wBwnCNTGn7V/VPLp4wanCT1/twfa983rSXAMVQ4n78Gg2tlTPHbsUfa2orNvhZIWRvcXdlsQOofv+FnT6BszV7Qll65ayxcF'
@@ -439,6 +444,7 @@ module.exports = function () {
         break
       case 7:
         p = 'blur'
+        break
       default:
         p = 'click'
         break
@@ -460,7 +466,7 @@ module.exports = function () {
       })
     }
     if (p == 'touchstart') {
-      $(id).bind('touchend', function (e) {
+      $(id).bind('touchend', function () {
         var t = $(this)
         t.removeClass('cm_be')
       })
@@ -547,7 +553,6 @@ module.exports = function () {
     }
   }
   cm.bet2 = function (div, tp, func1, func2) {
-    var d = $(div)
     cm.tme(div, function (t) {
       switch (tp) {
         case 1:
@@ -563,7 +568,7 @@ module.exports = function () {
       if (typeof func1 === 'function') {
         func1(t)
       }
-    }, function (t) {
+    }, function () {
 
     }, function (t) {
       switch (tp) {
@@ -715,7 +720,7 @@ module.exports = function () {
     var p = $(div)
     var a = p.find('.aall'), h = $(window).height()
     a.css('height', h + 'px')
-    cm.tno('.aall', 1, function (t) {
+    cm.tno('.aall', 1, function () {
       p.remove()
     }, 1)
     a.after(html)
@@ -756,19 +761,19 @@ module.exports = function () {
     cm.popK('#cmqdk', html, function (p) {
       var ts2 = p.find('.cm_tsdiv2')
       ts2.slideDown(268)
-      cm.ck('.upqx', function (t) {
+      cm.ck('.upqx', function () {
         p.remove()
         if (typeof func === 'function') {
           func(0)
         }
       })
-      cm.ck('.upqd', function (t) {
+      cm.ck('.upqd', function () {
         p.remove()
         if (typeof func === 'function') {
           func(1)
         }
       })
-      cm.tno('.aall', 1, function (t) {
+      cm.tno('.aall', 1, function () {
         p.remove()
       })
     })
@@ -814,13 +819,13 @@ module.exports = function () {
             '</div>' +
             '</div>' +
             '</div>'
-    cm.ck(div, function (t) {
+    cm.ck(div, function () {
       cm.popK('#swcont', html, function (p) {
         var sw = p.find('textarea[name=sayword]')
         var sw2 = $(div).find('textarea[name=sayword]')
         sw.focus().attr('placeholder', sw2.attr('placeholder'))
         sw.val(sw2.val())
-        cm.tno('.aall', 1, function (t) {
+        cm.tno('.aall', 1, function () {
           sw2.val(sw.val())
           p.remove()
           if (typeof func === 'function') {

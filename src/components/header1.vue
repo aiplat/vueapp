@@ -32,11 +32,11 @@
     },
     methods:{
       routerBack(){
-        va.back(this);
+        window.va.back(this);
       }
     },
     mounted(){
-       //cm.setWXH();
+       //window.cm.setWXH();
     }
   }
 </script>

@@ -9,7 +9,7 @@
     props:['isb0'],
     data () {
       return {
-        app:{description:Mconf.description,site:Mconf.site,url:Mconf.url}
+        app:{description:window.Mconf.description,site:window.Mconf.site,url:window.Mconf.url}
       }
     },
     methods:{

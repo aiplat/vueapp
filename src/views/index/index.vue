@@ -34,13 +34,13 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from 'vuex';
+import {  mapActions } from 'vuex';
 import mTitle from 'components/aiplat/header1';
 import mFooter from 'components/aiplat/footer1';
 export default {
   data() {
     return {
-      title: thisPage.title,
+      title: window.thisPage.title,
       indexData: {
         description:'AI智能空间,拥抱人工智能,明天会更好。个人项目:跨平台app~《亲信地铁》、小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致。详见应用展示。',
         gitName: '我的github',
@@ -80,11 +80,11 @@ export default {
   mounted() {
     var t = this;
     t.pushToBaidu();
-    cm.setWXH();
+    window.cm.setWXH();
   },
   components: { mTitle, mFooter },
   activated: function() {
-    cm.sli2(0, 1);
+    window.cm.sli2(0, 1);
   },
   deactivated: function() {}
 };

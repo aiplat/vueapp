@@ -23,13 +23,13 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from 'vuex';
+import {  mapActions } from 'vuex';
 import mTitle from 'components/aiplat/header1';
 import mFooter from 'components/aiplat/footer1';
 export default {
   data() {
     return {
-      title: thisPage.title,
+      title: window.thisPage.title,
       indexData: {
         desc:'非常感谢各位对ai智能空间的无偿捐赠,ai智能空间将会持续开发更多更好的应用。',
         about:'特别说明:以下收款二维码仅在全球唯一网站aiplat.com有效,对于全球其他地方或网站出现的均是假冒的。',
@@ -56,11 +56,11 @@ export default {
   mounted() {
     var t = this;
     t.pushToBaidu();
-    cm.setWXH();
+    window.cm.setWXH();
   },
   components: { mTitle, mFooter },
   activated: function() {
-    cm.sli2(0, 1);
+    window.cm.sli2(0, 1);
   },
   deactivated: function() {}
 };

@@ -12,7 +12,7 @@ var v = function () {
 	        method: method || 'get',
 	        data: data || {},
 	        headers: headers || {},
-	        params: {},
+	        params: params?params:{},
 	        timeout: 10000
 	    }
 	    if (!m.method || m.method == 'GET' || m.method == 'get') {
@@ -35,7 +35,7 @@ var v = function () {
 	        d.func && d.func(1, res)
 	    })).catch((err) => {
 	    	d.func && d.func(0, 'error')
-	        console.log('request error:' + url)
+	        console.log(err)
 	    })
   }
   return _t
