@@ -24,7 +24,7 @@
                   <li class="cm_pc_12 cm_prl05 cm_tc">
                      <div class="cm_pc_12 cm_bb1ce">
                             <div class="cm_fl cm_prl05 cm_be cm_hl2 cm_mtb05 cm_br02">{{indexData.cooperation}}</div>
-                            <div class="cm_pa cm_tr0 cm_hl3 cm_mr05"><a v-bind:href="toEmail" target="_blank">{{indexData.email}}</a></div>
+                            <div class="cm_pa cm_tr0 cm_hl3 cm_mr05"><a v-bind:href="toEmail()" target="_blank">{{indexData.email}}</a></div>
                       </div>
                   </li>
               </ul>
