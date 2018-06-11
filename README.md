@@ -39,13 +39,13 @@
 # 开发模式(实时刷新)
  - $ npm run dev
  - 
- - Listening on http://本机ip:3003
+ - Listening on http://本地ip:3003
  - Run successfully.
  - 最后看到以下这句 表示webpack编译成功
  - webpack: Compiled successfully.
  - 
  - 打开 http://localhost:3003
- - 或打开 http://本机ip:3003，方便手机在局域网访问
+ - 或打开 http://本地ip:3003，方便手机在局域网访问
 
 # eslint检测代码
  - $ npm run eslint
