@@ -6,13 +6,13 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
   entry: {
-    main: ['babel-polyfill','./src/main.js']
+    main: ['babel-polyfill', './src/main.js']
   },
   output: {
     path: config.build.assetsRoot,
     publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
     filename: '[name].js',
-    chunkFilename: '[name].js',
+    chunkFilename: '[name].js'
   },
   resolve: {
     extensions: ['', '.js', '.vue'],
@@ -69,6 +69,6 @@ module.exports = {
   },
 
   plugins: [
- 
+
   ]
 };

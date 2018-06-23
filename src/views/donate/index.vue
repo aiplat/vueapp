@@ -37,11 +37,11 @@ export default {
         dnarr: [
           {
             name: '微信收款',
-            img: require('../../assets/images/aiplat/index/donateWX.png')
+            img: require('assets/images/aiplat/index/donateWX.png')
           },
           {
             name: '支付宝收款',
-            img: require('../../assets/images/aiplat/index/donateZFB.png')
+            img: require('assets/images/aiplat/index/donateZFB.png')
           }
         ]
       }

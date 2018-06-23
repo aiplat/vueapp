@@ -1,3 +1,5 @@
+window.Mconf = {name: 'AI智能空间', 'type': 'aiplat', path: 'assets/images', logo: '', description: '', site: 'aiplat.com', url: 'http://aiplat.com'}
+
 // Index模块
 const Index = r => require(['views/index/index'], r)
 

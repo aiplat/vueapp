@@ -13,7 +13,7 @@ export default {
   props: ['title'],
   data() {
     return {
-      back2: require('../../assets/images/commons/cm_back2.png')
+      back2: require('assets/images/commons/cm_back2.png')
     };
   },
   methods: {

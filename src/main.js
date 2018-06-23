@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router/dist/vue-router.min'
@@ -18,7 +19,8 @@ Vue.use(myPlugin)
 // import echarts from 'echarts'
 // Vue.prototype.$echarts = echarts
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
+Vue.config.debug = true
 
 Vue.use(Vuex)
 Vue.use(VueRouter)
@@ -31,7 +33,7 @@ Vue.use(VueLazyload, {
   error: 'error',
   loading: 'assets/images/commons/icon2.png',
   attempt: 1,
-  listenEvents: [ 'scroll', 'mousewheel' ]
+  listenEvents: ['scroll', 'mousewheel']
 })
 
 utils(Vue)
@@ -63,7 +65,7 @@ window.router.beforeEach((to, from, next) => {
       }
       next()
     } else {
-      next({path: '/mine/log'})
+      next({ path: '/mine/log' })
     }
   } else {
     next()
