@@ -1,4 +1,6 @@
 import 'babel-polyfill'
+require('es6-promise').polyfill();
+require('es6-promise/auto');
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router/dist/vue-router.min'

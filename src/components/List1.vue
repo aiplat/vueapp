@@ -2,14 +2,14 @@
   <ul class="cm_pc_12 cm_bf">
      <li class="cm_pc_12 cm_bb1ce cmt2" @click="toUrl(k)" v-for="(v,k) in Larr"  v-bind:key="k">
        <div class="cm_pa cm_tl0" v-if="v.isLimg==1">
-           <img v-lazy="v.Limg" class="cm_fl cm_wh2 cm_bs100 cm_m05" />
+           <img :src="v.Limg" class="cm_fl cm_wh2 cm_bs100 cm_m05" />
        </div>
   	   <div class="cm_pc_12 cm_hl3 cm_ti05" :class="{'cm_pl205':v.isLimg==1}">
   	      <span :class="v.Tcolor">{{v.title}}</span>
   	   </div>
   	   <div class="cm_pa cm_tr0 cm_hl3 cm_mr05">
   	       <div class="cm_fl cm_c4c cm_fs08" :class="v.tscolor" v-if="v.ists==1">{{v.ts}}</div>
-  	       <img v-lazy="imgR" class="cm_fl cm_wh1 cm_bs100 cm_mtb1"  v-if="v.noR!=1"/>
+  	       <img :src="imgR" class="cm_fl cm_wh1 cm_bs100 cm_mtb1"  v-if="v.noR!=1"/>
   	   </div>
   	</li>
   </ul>

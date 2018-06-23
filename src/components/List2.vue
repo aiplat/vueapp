@@ -2,7 +2,7 @@
       <ul class="cm_pc_12 cm_ptb05 cm_bf">
           <router-link tag="li" :to="{'path':v.url}" class="cm_pc_3 cmt2" v-for="(v,k) in Larr" v-bind:key="k">
               <div class="cm_fc4 cm_mb05">
-                  <img class="cm_wh2 cm_bs100" v-lazy="v.img">
+                  <img class="cm_wh2 cm_bs100" :src="v.img">
               </div>
               <div class="cm_fc4" :class="v.Tcolor">
                   {{v.title}}

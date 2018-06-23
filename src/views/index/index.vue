@@ -72,7 +72,7 @@ export default {
     toEmail() {
       return 'mailto:' + this.indexData.email;
     },
-    ...mapActions(['pushToBaidu', 'getIndex'])
+    ...mapActions(['pushToBaidu','getIndex'])
   },
   computed: {
 
