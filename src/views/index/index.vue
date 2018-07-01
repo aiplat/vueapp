@@ -34,49 +34,68 @@
   </div>
 </template>
 <script>
-import {  mapActions } from 'vuex';
-import mTitle from 'components/aiplat/header1';
-import mFooter from 'components/aiplat/footer1';
+import { mapActions } from "vuex";
+import mTitle from "components/aiplat/header1";
+import mFooter from "components/aiplat/footer1";
 export default {
   data() {
     return {
       title: window.thisPage.title,
       indexData: {
-        description:'AI智能空间,拥抱人工智能,明天会更好。个人项目:跨平台app~《亲信地铁》、小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致。详见应用展示。',
-        gitName: '我的github',
-        gitUrl: 'github.com/womendi',
-        gitUrl2: 'https://github.com/womendi',
-        gitList:[{
-          name:'cmui',
-          desc:'自己写的跨平台css3框架',
-          url:'https://github.com/womendi/cmui'
-        },{
-          name:'vueapp',
-          desc:'改写vue-cli的跨平台框架',
-          url:'https://github.com/womendi/vueapp'
-        },{
-          name:'express-multipage',
-          desc:'改写express的多页面框架',
-          url:'https://github.com/womendi/express-multipage'
-        },{
-          name:'react-app-ie8',
-          desc:'改写react兼容IE8的跨平台框架',
-          url:'https://github.com/womendi/react-app-ie8'
-        }],
-        cooperation: '联系我',
-        email: 'womendi@qq.com'
+        description:
+          "AI智能空间,拥抱人工智能,明天会更好。个人项目:跨平台app~《亲信地铁》、小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app:同时兼容wap、web、微信浏览器、微信小程序、android和ios,六个平台界面统一,功能一致。详见应用展示。",
+        gitName: "我的github",
+        gitUrl: "github.com/womendi",
+        gitUrl2: "https://github.com/womendi",
+        gitList: [
+          {
+            name: "cmui",
+            desc: "自己写的跨平台css3框架",
+            url: "https://github.com/womendi/cmui"
+          },
+          {
+            name: "vueapp",
+            desc: "改写vue-cli的跨平台框架",
+            url: "https://github.com/womendi/vueapp"
+          },
+          {
+            name: "react-app-ie8",
+            desc: "改写react兼容IE8的跨平台框架",
+            url: "https://github.com/womendi/react-app-ie8"
+          },
+          {
+            name: "angular-app",
+            desc: "改写angular-cli的跨平台框架",
+            url: "https://github.com/womendi/angular-app"
+          },
+          {
+            name: "express-multipage",
+            desc: "改写express的多页面框架",
+            url: "https://github.com/womendi/express-multipage"
+          },
+          {
+            name: "nervjs-ie8",
+            desc: "改写nervjs兼容IE8的多页面框架",
+            url: "https://github.com/womendi/nervjs-ie8"
+          },
+          {
+            name: "reactNative",
+            desc: "改写reactNative的APP框架",
+            url: "https://github.com/womendi/reactNative"
+          }
+        ],
+        cooperation: "联系我",
+        email: "womendi@qq.com"
       }
     };
   },
   methods: {
     toEmail() {
-      return 'mailto:' + this.indexData.email;
+      return "mailto:" + this.indexData.email;
     },
-    ...mapActions(['pushToBaidu','getIndex'])
+    ...mapActions(["pushToBaidu", "getIndex"])
   },
-  computed: {
-
-  },
+  computed: {},
   mounted() {
     var t = this;
     t.pushToBaidu();
