@@ -27,42 +27,62 @@
   </div>
 </template>
 <script>
-import {  mapActions } from 'vuex';
-import mTitle from 'components/aiplat/header1';
-import mFooter from 'components/aiplat/footer1';
+import { mapActions } from "vuex";
+import mTitle from "components/aiplat/header1";
+import mFooter from "components/aiplat/footer1";
 export default {
   data() {
     return {
       title: window.thisPage.title,
       indexData: [
         {
-          name: '亲信地铁',
+          name: "亲信地铁",
           arr: [
             {
-              name: '跨平台网址-webApp',
-              url: 'http://m.aiplat.com/metro',
-              market: ''
+              name: "跨平台网址-webApp",
+              url: "http://m.aiplat.com/metro",
+              market: ""
             },
             {
-              name: '安卓App下载',
+              name: "安卓App下载",
               url:
-                'http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5',
-              market: '腾讯应用宝'
+                "http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5",
+              market: "腾讯应用宝"
             },
             {
-              name: '苹果App下载',
-              url: 'https://itunes.apple.com/cn/app/id1254451008',
-              market: 'appstore'
+              name: "苹果App下载",
+              url: "https://itunes.apple.com/cn/app/id1254451008",
+              market: "appstore"
             }
           ]
         },
         {
-          name: '娱乐计分器',
+          name: "娱乐计分器",
           arr: [
             {
-              name: '微信小程序-搜索‘娱乐计分器’',
-              url: 'weixin://',
-              market: ''
+              name: "微信小程序-搜索‘娱乐计分器’",
+              url: "weixin://",
+              market: ""
+            }
+          ]
+        },
+        {
+          name: "AI智能空间",
+          arr: [
+            {
+              name: "单页面vue版",
+              url: "http://www.aiplat.com",
+              market: ""
+            },
+            {
+              name: "单页面react版",
+              url: "http://react.aiplat.com",
+              market: ""
+            },
+            {
+              name: "多页面nervjs版",
+              url: "http://nerv.aiplat.com",
+              market: ""
             }
           ]
         }
@@ -74,13 +94,13 @@ export default {
       if (!url) {
         return;
       }
-      if (url == 'weixin://' && window.cm.isMob() == 0) {
-        window.cm.upts('请在手机浏览器点击打开微信');
+      if (url == "weixin://" && window.cm.isMob() == 0) {
+        window.cm.upts("请在手机浏览器点击打开微信");
         return;
       }
       window.location = url;
     },
-    ...mapActions(['pushToBaidu', 'getApps'])
+    ...mapActions(["pushToBaidu", "getApps"])
   },
   mounted() {
     var t = this;
