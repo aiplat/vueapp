@@ -11,35 +11,34 @@
   </div>
 </template>
 <script>
-    export default {
-        name: 'appDIV',
-        data() {
-            return {
-               'enterAnimate': '',
-               'leaveAnimate': ''
-            }
-        },
-        methods:{
-
-        },
-        components: {},
-        watch: {
-            '$route' (to, from) {
-                const toDepth = to.path.split('/').length;
-                const fromDepth = from.path.split('/').length;
-                this.enterAnimate='';
-                this.leaveAnimate='';
-                if (toDepth===fromDepth&&toDepth==2) {
-                    return
-                }
-                this.enterAnimate = toDepth >= fromDepth ? 'animated fadeInRight' : 'animated fadeInLeft'
-                this.leaveAnimate = 'animated fadeOutRight'
-            }
-        }
+export default {
+  name: "appDIV",
+  data() {
+    return {
+      enterAnimate: "",
+      leaveAnimate: ""
+    };
+  },
+  methods: {},
+  components: {},
+  watch: {
+    $route(to, from) {
+      const toDepth = to.path.split("/").length;
+      const fromDepth = from.path.split("/").length;
+      this.enterAnimate = "";
+      this.leaveAnimate = "";
+      if (toDepth === fromDepth && toDepth == 2) {
+        return;
+      }
+      this.enterAnimate =
+        toDepth >= fromDepth ? "animated fadeInRight" : "animated fadeInLeft";
+      this.leaveAnimate = "animated fadeOutRight";
     }
+  }
+};
 </script>
 <style>
-    @import "assets/css/lib/cmreset.css";
-    @import "assets/css/lib/cmstyle.css";
-    @import "assets/css/lib/aiplat.css";
+@import "assets/css/lib/cmreset.css";
+@import "assets/css/lib/cmstyle.css";
+@import "assets/css/lib/aiplat.css";
 </style>

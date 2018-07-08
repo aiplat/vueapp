@@ -840,7 +840,6 @@ module.exports = function () {
   }
 
   cm.setWXH = function (div) {
-    // cm.app.iswx=1;
     var div2 = div || '#WXtitle'
     if (cm.app.iswx) {
       $(div2).next().removeClass('cm_mt3').addClass('cm_mt0')

@@ -45,7 +45,6 @@ window.store = new Vuex.Store(storeOption)
 window.router = new VueRouter({
   routes: routes,
   hashbang: true
-  // mode:'history'
 })
 
 var LogSign = 'Loging'
