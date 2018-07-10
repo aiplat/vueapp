@@ -80,6 +80,11 @@ export default {
               market: ""
             },
             {
+              name: "单页面angular版",
+              url: "http://ajs.aiplat.com",
+              market: ""
+            },
+            {
               name: "多页面nervjs版",
               url: "http://nerv.aiplat.com",
               market: ""
