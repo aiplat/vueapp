@@ -2,7 +2,7 @@ import * as types from './mutations_types'
 
 module.exports = {
     [types.PUSHTOBAIDU](state){
-        console.log('state.id='+state.id);
+        state.id=0;
         // 百度推送收录
         var bp = document.createElement('script')
         var curProtocol = window.location.protocol.split(':')[0]
@@ -13,5 +13,8 @@ module.exports = {
         }
         var s = document.getElementsByTagName('script')[0]
         s.parentNode.insertBefore(bp, s)
+    },
+    [types.UPDATELOGIN](state,index){
+      state.isLogin=index;
     }
 };

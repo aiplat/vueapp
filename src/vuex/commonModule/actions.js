@@ -5,5 +5,10 @@ module.exports = {
         commit
     }) => {
         commit(types.PUSHTOBAIDU);
+    },
+    updateLogin: ({
+        commit
+    },index) => {
+        commit(types.UPDATELOGIN,index);
     }
 };

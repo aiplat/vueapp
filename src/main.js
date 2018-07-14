@@ -60,9 +60,9 @@ window.router.beforeEach((to, from, next) => {
   }
   // 登录验证
   if (to.matched.some(m => m.meta.auth)) {
-    if (window.store.state.isLogin == LogSign || window.cm.getLS('isLogin') == LogSign) {
-      if (window.store.state.isLogin != LogSign) {
-        window.store.commit('isLogin', LogSign)
+    if (store.getters.isLogin == LogSign || window.cm.getLS('isLogin') == LogSign) {
+      if (store.getters.isLogin != LogSign) {
+        window.store.dispatch('updateLogin', LogSign)
       }
       next()
     } else {
