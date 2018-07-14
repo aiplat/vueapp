@@ -1,5 +1,5 @@
 # vueapp
- - vue2+vue-router+vuex+webpack+cmui
+ - vue2+vue-router+vuex+cmui+html5+css3+webpack+eslint
  - 适合开发各种webapp
  - aiplat.com开源框架来自vue-cli
  - cmui仓库为https://github.com/womendi/cmui.git
