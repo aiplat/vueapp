@@ -8,7 +8,7 @@ import App from './app'
 
 import myPlugin from './plugins/myPlugin'
 
-import storeOption from './vuex/store'
+import store from './vuex/store'
 import routes from './routes'
 
 import FastClick from 'fastclick'
@@ -40,7 +40,7 @@ Vue.use(VueLazyload, {
 
 utils(Vue)
 
-window.store = new Vuex.Store(storeOption)
+window.store = store
 
 window.router = new VueRouter({
   routes: routes,
@@ -74,7 +74,6 @@ window.router.beforeEach((to, from, next) => {
 })
 
 const router = window.router
-const store = window.store
 window.cmApp = new Vue({
   el: '#app',
   router,

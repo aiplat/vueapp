@@ -12,27 +12,27 @@
 </template>
 <script>
 export default {
-  name: "appDIV",
+  name: 'appDIV',
   data() {
     return {
-      enterAnimate: "",
-      leaveAnimate: ""
+      enterAnimate: '',
+      leaveAnimate: ''
     };
   },
   methods: {},
   components: {},
   watch: {
     $route(to, from) {
-      const toDepth = to.path.split("/").length;
-      const fromDepth = from.path.split("/").length;
-      this.enterAnimate = "";
-      this.leaveAnimate = "";
+      const toDepth = to.path.split('/').length;
+      const fromDepth = from.path.split('/').length;
+      this.enterAnimate = '';
+      this.leaveAnimate = '';
       if (toDepth === fromDepth && toDepth == 2) {
         return;
       }
       this.enterAnimate =
-        toDepth >= fromDepth ? "animated fadeInRight" : "animated fadeInLeft";
-      this.leaveAnimate = "animated fadeOutRight";
+        toDepth >= fromDepth ? 'animated fadeInRight' : 'animated fadeInLeft';
+      this.leaveAnimate = 'animated fadeOutRight';
     }
   }
 };

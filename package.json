@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "node build/dev.js",
     "build": "node build/build.js",
-    "eslint": "eslint --color --fix --ext .html,.js,.vue ./"
+    "eslint": "eslint --color --ext .html,.js,.vue ./",
+    "esfix": "eslint --color --fix --ext .html,.js,.vue ./"
   },
   "dependencies": {
     "es6-promise": "^4.0.5",
-    "vue": "^2.0.1",
+    "vue": "^2.1.0",
     "vue-router": "^2.0.1",
-    "vuex": "^2.0.0",
+    "vuex": "^2.1.1",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {

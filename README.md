@@ -50,8 +50,9 @@
  - 打开 http://localhost:3003
  - 或打开 http://本地ip:3003，方便手机在局域网访问
 
-# eslint检测代码
- - $ npm run eslint
+# eslint
+ - $ npm run eslint  (查看)
+ - $ npm run esfix  (fix)
 
 # 打包项目
  - $ npm run build
