@@ -68,6 +68,11 @@ export default {
             url: 'https://github.com/womendi/angular-app'
           },
           {
+            name: 'wepy-app',
+            desc: '改写wepy的小程序框架',
+            url: 'https://github.com/womendi/wepy-app'
+          },
+          {
             name: 'express-multipage',
             desc: '改写express的多页面框架',
             url: 'https://github.com/womendi/express-multipage'
