@@ -62,7 +62,7 @@ var app2 = {
       ],
       site: {
         name: 'aiplat.com',
-        url: 'http://www.aiplat.com',
+        url: 'http://aiplat.com',
         copyright: '©2016'
       },
       beian: {
