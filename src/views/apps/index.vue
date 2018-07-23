@@ -13,7 +13,7 @@
                       <div class="cm_fl cm_prl05 cm_be cm_hl2 cm_mtb05 cm_br02">{{k2+1}}、{{item.name}}</div>
                 </li>
                 <li class="cm_pc_12 cm_pd05 cm_tc cm_be">
-                    <div class="cm_pc_12  cm_lh3 cm_br02 cm_bf cm_bb1ce" v-for="(v,k) in item.arr" v-bind:key="k" @click="toDown(v.url)">
+                    <div class="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce" v-for="(v,k) in item.arr" v-bind:key="k" @click="toWin(v.url)">
                           <div class="cmtou" v-if="v.market">{{v.market+'-'+v.name}}</div>
                           <div class="cmtou" v-else>{{v.name}}</div>
                     </div>
@@ -44,8 +44,7 @@ export default {
             },
             {
               name: '安卓App下载',
-              url:
-                'http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5',
+              url: 'http://a.app.qq.com/o/simple.jsp?pkgname=io.dcloud.H5093BCE5',
               market: '腾讯应用宝'
             },
             {
@@ -94,7 +93,7 @@ export default {
     };
   },
   methods: {
-    toDown(url) {
+    toWin(url) {
       if (!url) {
         return;
       }
