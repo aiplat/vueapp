@@ -30,7 +30,7 @@ module.exports = {
     "eol-last": 0,
     "no-unused-vars": [2, { "vars": "all", "args": "after-used" }],
     "no-underscore-dangle": 0,
-    "no-alert": 2,
+    "no-alert": 0,
     "no-lone-blocks": 0,
     "no-class-assign": 2,
     "no-cond-assign": 2,
