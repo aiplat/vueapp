@@ -11,7 +11,6 @@ import myPlugin from './plugins/myPlugin'
 import store from './vuex/store'
 import routes from './routes'
 
-import FastClick from 'fastclick'
 import VueLazyload from 'vue-lazyload'
 
 import utils from './plugins/utils'
@@ -27,7 +26,6 @@ Vue.config.debug = true
 Vue.use(Vuex)
 Vue.use(VueRouter)
 
-FastClick.attach(document.body)
 
 Vue.use(VueLazyload)
 Vue.use(VueLazyload, {

@@ -1,3 +1,5 @@
+import FastClick from 'fastclick'
+
 // 全局jquery
 window.jQuery = window.$ = require('jquery/dist/jquery.min.js')
 
@@ -9,6 +11,8 @@ window.va = require('./vueapi')()
 
 // cookie
 window.coki = require('./cookie')()
+
+FastClick.attach(document.body)
 
 // 输入框在虚拟键盘弹出时，自动滚动到可见位置
 document.body.addEventListener('click', function (event) {
