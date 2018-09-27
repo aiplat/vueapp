@@ -2,7 +2,7 @@
   <div class="cm_main2">
     <div class="cm_main cm_pr">
       <m-title :title="title"></m-title>
-      <div class="cm_pc_12 cm_mt3 cm_mb6">
+      <div class="cm_pc_12 cm_mt3 cm_mb8">
         <ul class="cm_pc_12">
           <li class="cm_pc_12 cm_mt05">
               <div class="metro_icon cm_wh7 cm_bs100 cm_fc"></div>
