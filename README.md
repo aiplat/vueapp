@@ -2,7 +2,7 @@
  - vue2+vue-router+vuex+cmui+html5+css3+webpack+eslint
  - 适合开发各种webapp
  - aiplat.com开源框架来自vue-cli
- - cmui仓库为https://github.com/womendi/cmui.git
+ - cmui仓库为https://github.com/aiplat/cmui.git
  - 结合hbuilder打包，可以直接做成全平台应用。例如 亲信地铁（vueapp） 腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
 
  - 代码实例：      ai智能空间vue版     http://aiplat.com
@@ -33,7 +33,7 @@
 ---
 
 # clone
- - $ git clone https://github.com/womendi/vueapp.git
+ - $ git clone https://github.com/aiplat/vueapp.git
 
 # 安装依赖
  - $ cd vueapp
