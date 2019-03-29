@@ -1,3 +1,16 @@
+const getIP = () => {
+    const interfaces = require('os').networkInterfaces();
+    for (const devName in interfaces) {
+      const iface = interfaces[devName];
+      for (const i in iface) {
+        const alias = iface[i];
+        if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
+          return alias.address;
+        }
+      }
+    }
+  };
+
 module.exports = {
     publicPath: '',
     outputDir: 'dist',
@@ -11,7 +24,7 @@ module.exports = {
     },
     devServer: {
         open: true,
-        host: '127.0.0.1',
+        host: getIP(),
         port: 3003,
         https: false,
         hotOnly: false,

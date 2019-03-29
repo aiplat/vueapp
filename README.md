@@ -1,15 +1,18 @@
 # vueapp
- - vue2+vue-router+vuex+cmui+html5+css3+webpack+eslint
+## vue-cli3 typescript版本
+ - vue-cli3+vuex+cmui+html5+css3+typescript+webpack+tslint
  - 适合开发各种webapp
  - aiplat.com开源框架来自vue-cli
  - cmui仓库为https://github.com/aiplat/cmui.git
  - 结合hbuilder打包，可以直接做成全平台应用。例如 亲信地铁（vueapp） 腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
 
- - 代码实例：      ai智能空间vue版     http://aiplat.com
+ - 代码实例：       ai智能空间vue版     https://aiplat.com
  - 实例相对应网站1：ai智能空间react版   http://react.aiplat.com
  - 实例相对应网站2：ai智能空间angular版 http://ajs.aiplat.com
  - 实例相对应网站3：ai智能空间nervjs版  http://nerv.aiplat.com
- 
+
+ - vue-cli2版本为 https://github.com/aiplat/uniapp/tree/vuecli2 的vuecli2分支
+
  - 另外 全平台框架: https://github.com/aiplat/uniapp
 
 ---
@@ -41,12 +44,10 @@
 
 # 开发模式(实时刷新)
  - $ npm run dev
- - 
+ -
  - App running at:
- - Local:   http://127.0.0.1:3003/
- - Network: http://127.0.0.1:3003/
- - 
- - 或打开 http://localhost:3003
+ - Local:   http://本地IP:3003/
+ - Network: http://本地IP:3003/
 
 # 打包项目
  - $ npm run build
@@ -59,11 +60,11 @@
 
 ### 可用cnpm代替npm
  - $ npm install -g cnpm --registry=https://registry.npm.taobao.org
- - 然后所有npm * 可用 cnpm *代替 
+ - 然后所有npm * 可用 cnpm *代替
  - 例如 cnpm install 、cnpm install -g ** 、cnpm install --save-dev **
 
 ### 可用yarn代替npm
- - 然后所有npm * 可用 yarn具体代码代替 
+ - 然后所有npm * 可用 yarn具体代码代替
   - 例如 yarn或yarn install 、yarn add **、 yarn add ** --dev
 
 ---
