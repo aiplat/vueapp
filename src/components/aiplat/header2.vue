@@ -8,21 +8,17 @@
       </div>
   </header>
 </template>
-<script>
-export default {
-  props: ['title'],
-  data() {
-    return {
-      back2: require('assets/images/commons/cm_back2.png')
-    };
-  },
-  methods: {
-    routerBack() {
-      this.$router.push({ path: '/' });
+<script lang="ts">
+    import {Component, Prop, Vue} from 'vue-property-decorator';
+
+    @Component
+    export default class Header2 extends Vue {
+        @Prop() private title!: string;
+        private back2: string = require('../../assets/images/commons/cm_back2.png');
+
+        private routerBack() {
+            this.$router.push({ path: '/' });
+        }
     }
-  },
-  mounted() {
-    //window.cm.setWXH();
-  }
-};
+
 </script>
