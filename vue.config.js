@@ -1,3 +1,4 @@
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const getIP = () => {
   const interfaces = require('os').networkInterfaces();
   for (const devName in interfaces) {
@@ -21,6 +22,16 @@ module.exports = {
     modules: true,
     extract: true,
     sourceMap: false,
+  },
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      config.plugins.push(new CompressionWebpackPlugin({
+        algorithm: 'gzip',
+        test: new RegExp('\\.(' + ['js', 'css'].join('|') + ')$'),
+        threshold: 10240,
+        minRatio: 0.8
+      }))
+    }
   },
   devServer: {
     open: true,
