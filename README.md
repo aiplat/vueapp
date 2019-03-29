@@ -11,7 +11,7 @@
  - 实例相对应网站2：ai智能空间angular版 http://ajs.aiplat.com
  - 实例相对应网站3：ai智能空间nervjs版  http://nerv.aiplat.com
 
- - vue-cli2版本为 https://github.com/aiplat/uniapp/tree/vuecli2 的vuecli2分支
+ - vue-cli2版本为 https://github.com/aiplat/vueapp/tree/vuecli2 的vuecli2分支
 
  - 另外 全平台框架: https://github.com/aiplat/uniapp
 
