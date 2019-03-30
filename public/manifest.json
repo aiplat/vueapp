@@ -1,6 +1,6 @@
 {
-  "name": "aiplat.com",
-  "short_name": "vuecli3.0.0",
+  "name": "AI智能空间",
+  "short_name": "AI智能空间",
   "icons": [
     {
       "src": "./img/icons/icon.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#4DBA87"
