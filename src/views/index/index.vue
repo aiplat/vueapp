@@ -54,7 +54,7 @@
     export default class Index extends Vue {
         private title: string = 'AI智能空间';
         private indexData: any = {
-            description: 'AI智能空间,拥抱人工智能,明天会更好。个人项目：跨平台app~《亲信地铁》、小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app：同时兼容wap、web、微信浏览器、微信百度支付宝头条小程序、android和ios,各个平台界面统一,功能一致。详见应用展示。',
+            description: 'AI智能空间,拥抱人工智能,明天会更好。个人项目：跨平台app~《亲信地铁》、已上线微信头条支付宝三大小程序~《娱乐计分器》。技术研究潜心使用各种框架开发h5app：同时兼容wap、web、微信浏览器、微信百度支付宝头条小程序、android和ios,各个平台界面统一,功能一致。详见应用展示。',
             gitName: '我的github',
             gitUrl: 'github.com/aiplat',
             gitUrl2: 'https://github.com/aiplat',
