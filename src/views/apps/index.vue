@@ -29,8 +29,8 @@
 </template>
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Header1 from '@/components/aiplat/Header1.vue';
-    import Footer1 from '@/components/aiplat/Footer1.vue';
+    import Header1 from '@/components/aiplat.com/Header1.vue';
+    import Footer1 from '@/components/aiplat.com/Footer1.vue';
 
     @Component({
         components: {

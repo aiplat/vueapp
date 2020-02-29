@@ -13,8 +13,8 @@
 </template>
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Header2 from '@/components/aiplat/Header2.vue';
-    import Copyright1 from '@/components/aiplat/Copyright1.vue';
+    import Header2 from '@/components/aiplat.com/Header2.vue';
+    import Copyright1 from '@/components/aiplat.com/Copyright1.vue';
 
     @Component({
         components: {

@@ -42,20 +42,20 @@
             {
                 name: '首页',
                 url: '/',
-                img: require('../../assets/images/aiplat/footer/sy_01.png'),
-                imgon: require('../../assets/images/aiplat/footer/sy_01on.png'),
+                img: require('../../assets/images/aiplat.com/sy_01.png'),
+                imgon: require('../../assets/images/aiplat.com/sy_01on.png'),
             },
             {
                 name: '应用展示',
                 url: '/apps.html',
-                img: require('../../assets/images/aiplat/footer/sy_03.png'),
-                imgon: require('../../assets/images/aiplat/footer/sy_03on.png'),
+                img: require('../../assets/images/aiplat.com/sy_03.png'),
+                imgon: require('../../assets/images/aiplat.com/sy_03on.png'),
             },
             {
                 name: '捐赠我们',
                 url: '/donate.html',
-                img: require('../../assets/images/aiplat/footer/sy_04.png'),
-                imgon: require('../../assets/images/aiplat/footer/sy_04on.png'),
+                img: require('../../assets/images/aiplat.com/sy_04.png'),
+                imgon: require('../../assets/images/aiplat.com/sy_04on.png'),
             },
         ];
         private arr: object[] = [

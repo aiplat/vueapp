@@ -1,5 +1,5 @@
 export default {
-    getDnid(state: any) {
-        return state.dnid;
-    },
+  getDnid(state: any) {
+    return state.dnid;
+  },
 };

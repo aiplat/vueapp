@@ -4,11 +4,11 @@
 */
 /*vue-lazyload*/
 img[lazy=loading] {
-  background: url('../../images/commons/icon2.png') center no-repeat;
+  background: url('../images/commons/icon2.png') center no-repeat;
   background-size: 100% 100%;
 }
 img[lazy=error] {
-  background: url('../../images/commons/loadingErr.png') center no-repeat;
+  background: url('../images/commons/loadingErr.png') center no-repeat;
   background-size: 100% 100%;
 }
 /*vue-lazyload*/
@@ -251,8 +251,8 @@ img[lazy=error] {
 
 /* 默认一些公共图标 */
 .img_logo{
-    background:url('../../images/icon.png') center no-repeat;
+    background:url('../images/icon.png') center no-repeat;
 }
 .metro_icon{
-    background:url('../../images/commons/metro_icon.png') center no-repeat;
+    background:url('../images/commons/metro_icon.png') center no-repeat;
 }

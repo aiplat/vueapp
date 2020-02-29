@@ -4432,7 +4432,7 @@ label {
   width: 1em;
   height: 1em;
   background-size: 100% 100%!important;
-  background: url('../../images/commons/loading2.gif') center no-repeat;
+  background: url('../images/commons/loading2.gif') center no-repeat;
 }
 .cm_Load {
   position: fixed;

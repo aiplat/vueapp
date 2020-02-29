@@ -1,13 +1,12 @@
-import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
-import Header1 from '@/components/aiplat/Header1.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
-describe('Header1.vue', () => {
-  it('renders props.title when passed', () => {
-    const title = 'new message';
-    const wrapper = shallowMount(Header1, {
-      propsData: { title },
+describe('HelloWorld.vue', () => {
+  it('renders props.msg when passed', () => {
+    const msg = 'new message';
+    const wrapper = shallowMount(HelloWorld, {
+      propsData: { msg },
     });
-    expect(wrapper.text()).to.include(title);
+    expect(wrapper.text()).toMatch(msg);
   });
 });

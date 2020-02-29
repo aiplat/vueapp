@@ -13,8 +13,8 @@
     }
 
 </script>
-<style>
-    @import "assets/css/lib/cmreset.css";
-    @import "assets/css/lib/cmstyle.css";
-    @import "assets/css/lib/aiplat.css";
+<style lang="less">
+    @import "assets/css/cmreset.css";
+    @import "assets/css/cmstyle.css";
+    @import "assets/css/aiplat.css";
 </style>

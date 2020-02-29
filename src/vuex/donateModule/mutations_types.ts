@@ -1,1 +1,1 @@
-export const TSDNID = 'TSDNID';
+export const SETDNID = 'SETDNID';

@@ -1,11 +1,13 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-Vue.use(Vuex);
 
+import commonModule from './commonModule/index';
 import donateModule from './donateModule/index';
 
+Vue.use(Vuex);
 export default new Vuex.Store({
-    modules: {
-        donateModule,
-    },
+  modules: {
+    commonModule,
+    donateModule,
+  },
 });

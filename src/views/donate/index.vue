@@ -26,8 +26,8 @@
 </template>
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator';
-import Header1 from '@/components/aiplat/Header1.vue';
-import Footer1 from '@/components/aiplat/Footer1.vue';
+import Header1 from '@/components/aiplat.com/Header1.vue';
+import Footer1 from '@/components/aiplat.com/Footer1.vue';
 
 @Component({
     components: {
@@ -43,22 +43,21 @@ export default class Donate extends Vue {
         dnarr: [
             {
                 name: '微信收款',
-                img: require('../../assets/images/aiplat/index/donateWX.png'),
+                img: require('../../assets/images/aiplat.com/donate_WX.png'),
             },
             {
                 name: '支付宝收款',
-                img: require('../../assets/images/aiplat/index/donateZFB.png'),
+                img: require('../../assets/images/aiplat.com/donate_ZFB.png'),
             },
         ],
     };
 
-    // 类似 computed
     get dnid() {
         return this.$store.getters.getDnid;
     }
 
     private tsDnid(k: number) {
-        this.$store.dispatch('tsDnid', k);
+        this.$store.dispatch('setDnid', k);
     }
 
     private mounted(): void {

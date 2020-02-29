@@ -42,8 +42,8 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import Header1 from '@/components/aiplat/Header1.vue';
-    import Footer1 from '@/components/aiplat/Footer1.vue';
+    import Header1 from '@/components/aiplat.com/Header1.vue';
+    import Footer1 from '@/components/aiplat.com/Footer1.vue';
 
     @Component({
         components: {
@@ -65,14 +65,14 @@
                     url: 'https://github.com/aiplat/cmui',
                 },
                 {
-                    name: 'vueapp',
-                    desc: '改写vue-cli的跨平台框架',
-                    url: 'https://github.com/aiplat/vueapp',
-                },
-                {
                     name: 'uniapp',
                     desc: '改写uni-app的跨平台框架',
                     url: 'https://github.com/aiplat/uniapp',
+                },
+                {
+                    name: 'vueapp',
+                    desc: '改写vue-cli的跨平台框架',
+                    url: 'https://github.com/aiplat/vueapp',
                 },
                 {
                     name: 'react-app-ie8',
@@ -85,11 +85,6 @@
                     url: 'https://github.com/aiplat/angular-app',
                 },
                 {
-                    name: 'wepy-app',
-                    desc: '改写wepy的小程序框架',
-                    url: 'https://github.com/aiplat/wepy-app',
-                },
-                {
                     name: 'express-multipage',
                     desc: '改写express的多页面框架',
                     url: 'https://github.com/aiplat/express-multipage',
@@ -98,6 +93,11 @@
                     name: 'nervjs-ie8',
                     desc: '改写nervjs兼容IE8的多页面框架',
                     url: 'https://github.com/aiplat/nervjs-ie8',
+                },
+                {
+                    name: 'wepy-app',
+                    desc: '改写wepy的小程序框架',
+                    url: 'https://github.com/aiplat/wepy-app',
                 },
                 {
                     name: 'reactNative',
