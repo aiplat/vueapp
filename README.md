@@ -1,75 +1,73 @@
 # vueapp
-## vue-cli4 typescript°æ±¾
- - vue-cli4+vuex+cmui+html5+css3+typescript+webpack+tslint
- - ÊÊºÏ¿ª·¢¸÷ÖÖwebapp
- - aiplat.com¿ªÔ´¿ò¼ÜÀ´×Ôvue-cli
- - cmui²Ö¿âÎªhttps://github.com/aiplat/cmui.git
- - ½áºÏhbuilder´ò°ü£¬¿ÉÒÔÖ±½Ó×ö³ÉÈ«Æ½Ì¨Ó¦ÓÃ¡£ÀıÈç Ç×ĞÅµØÌú£¨vueapp£© ÌÚÑ¶Ó¦ÓÃ±¦»òÆ»¹ûappstoreËÑË÷¡®Ç×ĞÅµØÌú¡¯¡¢web·ÃÎÊhttp://m.aiplat.com/metro
+## vue-cli4 typescriptç‰ˆæœ¬
+ - vue-cli4+vuex+cmui+html5+css3+typescript+tslint
+ - é€‚åˆå¼€å‘å„ç§webapp
+ - aiplat.comå¼€æºæ¡†æ¶æ¥è‡ªvue-cli
+ - cmuiä»“åº“ä¸ºhttps://github.com/aiplat/cmui.git
+ - ç»“åˆhbuilderæ‰“åŒ…ï¼Œå¯ä»¥ç›´æ¥åšæˆå…¨å¹³å°åº”ç”¨ã€‚ä¾‹å¦‚ äº²ä¿¡åœ°é“ï¼ˆvueappï¼‰ è…¾è®¯åº”ç”¨å®æˆ–è‹¹æœappstoreæœç´¢â€˜äº²ä¿¡åœ°é“â€™ã€webè®¿é—®http://m.aiplat.com/metro
 
- - ´úÂëÊµÀı£º       aiÖÇÄÜ¿Õ¼ävue°æ     https://aiplat.com
- - ÊµÀıÏà¶ÔÓ¦ÍøÕ¾1£ºaiÖÇÄÜ¿Õ¼äreact°æ   http://react.aiplat.com
- - ÊµÀıÏà¶ÔÓ¦ÍøÕ¾2£ºaiÖÇÄÜ¿Õ¼äangular°æ http://ajs.aiplat.com
- - ÊµÀıÏà¶ÔÓ¦ÍøÕ¾3£ºaiÖÇÄÜ¿Õ¼änervjs°æ  http://nerv.aiplat.com
+ - ä»£ç å®ä¾‹ï¼š       aiæ™ºèƒ½ç©ºé—´vueç‰ˆ     https://aiplat.com
+ - å®ä¾‹ç›¸å¯¹åº”ç½‘ç«™1ï¼šaiæ™ºèƒ½ç©ºé—´reactç‰ˆ   http://react.aiplat.com
+ - å®ä¾‹ç›¸å¯¹åº”ç½‘ç«™2ï¼šaiæ™ºèƒ½ç©ºé—´angularç‰ˆ http://ajs.aiplat.com
+ - å®ä¾‹ç›¸å¯¹åº”ç½‘ç«™3ï¼šaiæ™ºèƒ½ç©ºé—´nervjsç‰ˆ  http://nerv.aiplat.com
 
- - vue-cli2°æ±¾Îª https://github.com/aiplat/vueapp/tree/vuecli2 µÄvuecli2·ÖÖ§
-
- - ÁíÍâ È«Æ½Ì¨¿ò¼Ü: https://github.com/aiplat/uniapp
+ - å¦å¤– å…¨å¹³å°æ¡†æ¶: https://github.com/aiplat/uniapp
 
 ---
 
-# ´úÂëÄ¿Â¼½á¹¹
+# ä»£ç ç›®å½•ç»“æ„
 
- - dist            ------npm run buildºóÊµ¼Ê²¼Êğ´úÂëÄ¿Â¼
- - public          ------index.htmlµÈÄ¿Â¼
- - src             ------´úÂëÖ÷ÌåÄ¿Â¼
- - --- assets      ------¾²Ì¬css¡¢imagesÎÄ¼şÄ¿Â¼
- - --- components  ------¹«¹²×é¼şÄ¿Â¼
- - --- plugins     ------¹«¹²º¯Êı»ò²å¼şÄ¿Â¼
- - --- routes      ------Â·ÓÉÅäÖÃÄ¿Â¼
- - --- service     ------¹«¹²ÅäÖÃÄ¿Â¼
- - --- views       ------Â·ÓÉ¶ÔÓ¦Ò³ÃæÊÓÍ¼Ä¿Â¼
- - --- vuex        ------storeÄ¿Â¼
- - --- App.vue     ------Ó¦ÓÃ³ĞÔØÎÄ¼ş
- - --- main.ts     ------Ó¦ÓÃÈë¿ÚÎÄ¼ş
- - tests           ------²âÊÔÄ¿Â¼
+ - dist            ------npm run buildåå®é™…å¸ƒç½²ä»£ç ç›®å½•
+ - public          ------index.htmlç­‰ç›®å½•
+ - src             ------ä»£ç ä¸»ä½“ç›®å½•
+ - --- assets      ------é™æ€cssã€imagesæ–‡ä»¶ç›®å½•
+ - --- components  ------å…¬å…±ç»„ä»¶ç›®å½•
+ - --- plugins     ------å…¬å…±å‡½æ•°æˆ–æ’ä»¶ç›®å½•
+ - --- routes      ------è·¯ç”±é…ç½®ç›®å½•
+ - --- service     ------å…¬å…±é…ç½®ç›®å½•
+ - --- views       ------è·¯ç”±å¯¹åº”é¡µé¢è§†å›¾ç›®å½•
+ - --- vuex        ------storeç›®å½•
+ - --- App.vue     ------åº”ç”¨æ‰¿è½½æ–‡ä»¶
+ - --- main.ts     ------åº”ç”¨å…¥å£æ–‡ä»¶
+ - tests           ------æµ‹è¯•ç›®å½•
 
 ---
 
 # clone
  - $ git clone https://github.com/aiplat/vueapp.git
 
-# °²×°ÒÀÀµ
+# å®‰è£…ä¾èµ–
  - $ cd vueapp
  - $ npm install
 
-# ¿ª·¢Ä£Ê½(ÊµÊ±Ë¢ĞÂ)
+# å¼€å‘æ¨¡å¼(å®æ—¶åˆ·æ–°)
  - $ npm run dev
  -
  - App running at:
- - Local:   http://±¾µØIP:3003/
- - Network: http://±¾µØIP:3003/
+ - Local:   http://æœ¬åœ°IP:2020/
+ - Network: http://æœ¬åœ°IP:2020/
 
-# ´ò°üÏîÄ¿
+# æ‰“åŒ…é¡¹ç›®
  - $ npm run build
- - Õû¸öÏîÄ¿´úÂë´ò°üµ½distÄ¿Â¼£¬´ò¿ªÆäÖĞindex.html¾ÍÊÇÏîÄ¿ Ê×Ò³
- - ²¼Êğµ½·şÎñÆ÷£¬Ö±½Ó½«distÄ¿Â¼ÖĞÎÄ¼ş·ÅÔÚ·şÎñÆ÷¸ùÄ¿Â¼
+ - æ•´ä¸ªé¡¹ç›®ä»£ç æ‰“åŒ…åˆ°distç›®å½•ï¼Œæ‰“å¼€å…¶ä¸­index.htmlå°±æ˜¯é¡¹ç›® é¦–é¡µ
+ - å¸ƒç½²åˆ°æœåŠ¡å™¨ï¼Œç›´æ¥å°†distç›®å½•ä¸­æ–‡ä»¶æ”¾åœ¨æœåŠ¡å™¨æ ¹ç›®å½•
 
 ---
 
-# ÃüÁîÌæ»»
+# å‘½ä»¤æ›¿æ¢
 
-### ¿ÉÓÃcnpm´úÌænpm
+### å¯ç”¨cnpmä»£æ›¿npm
  - $ npm install -g cnpm --registry=https://registry.npm.taobao.org
- - È»ºóËùÓĞnpm * ¿ÉÓÃ cnpm *´úÌæ
- - ÀıÈç cnpm install ¡¢cnpm install -g ** ¡¢cnpm install --save-dev **
+ - ç„¶åæ‰€æœ‰npm * å¯ç”¨ cnpm *ä»£æ›¿
+ - ä¾‹å¦‚ cnpm install ã€cnpm install -g ** ã€cnpm install --save-dev **
 
-### ¿ÉÓÃyarn´úÌænpm
- - È»ºóËùÓĞnpm * ¿ÉÓÃ yarn¾ßÌå´úÂë´úÌæ
-  - ÀıÈç yarn»òyarn install ¡¢yarn add **¡¢ yarn add ** --dev
+### å¯ç”¨yarnä»£æ›¿npm
+ - ç„¶åæ‰€æœ‰npm * å¯ç”¨ yarnå…·ä½“ä»£ç ä»£æ›¿
+  - ä¾‹å¦‚ yarnæˆ–yarn install ã€yarn add **ã€ yarn add ** --dev
 
 ---
 
-# ¼æÈİĞÔ
- - PC¶Ë¼æÈİIE9¼°ÒÔÉÏ
- - ÊÖ»ú¶Ë¼æÈİ°²×¿ÓëiosµÈµÈ¸÷ÖÖÏµÍ³£¬²»Çø·Ö»úĞÍ
- - ¼æÈİÒ»ÇĞ¿ÉÁªÍøÉè±¸£¬±ÈÈçTVµÈµÈ,²»Çø·Ö³ß´ç´óĞ¡
+# å…¼å®¹æ€§
+ - PCç«¯å…¼å®¹IE9åŠä»¥ä¸Š
+ - æ‰‹æœºç«¯å…¼å®¹å®‰å“ä¸iosç­‰ç­‰å„ç§ç³»ç»Ÿï¼Œä¸åŒºåˆ†æœºå‹
+ - å…¼å®¹ä¸€åˆ‡å¯è”ç½‘è®¾å¤‡ï¼Œæ¯”å¦‚TVç­‰ç­‰,ä¸åŒºåˆ†å°ºå¯¸å¤§å°

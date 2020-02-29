@@ -114,16 +114,15 @@
         }
 
         private created() {
-            console.log('created');
+            // 1
         }
 
         private mounted() {
-            // console.log(this.$conf);
-            // console.log(this.$apis);
+            // 2
         }
 
         private activated() {
-            // console.log(this.$cm);
+            // 3
         }
     }
 
