@@ -41,7 +41,7 @@
         private items: object[] = [
             {
                 name: '首页',
-                url: '/',
+                url: '/index.html',
                 img: require('../../assets/images/aiplat.com/sy_01.png'),
                 imgon: require('../../assets/images/aiplat.com/sy_01on.png'),
             },
@@ -67,7 +67,7 @@
             {
                 name: '亲信地铁ios版下载',
                 url:
-                    'https://itunes.apple.com/us/app/%E4%BA%B2%E4%BF%A1%E5%9C%B0%E9%93%81/id1254451008?l=zh&ls=1&mt=8#',
+                    'https://itunes.apple.com/cn/app/id1254451008',
             },
             {name: '微信小程序-搜索‘娱乐计分器’', url: 'weixin://'},
         ];

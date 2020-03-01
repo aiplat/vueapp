@@ -43,11 +43,11 @@ export default class Donate extends Vue {
         dnarr: [
             {
                 name: '微信收款',
-                img: require('../../assets/images/aiplat.com/donate_WX.png'),
+                img: require('../../../assets/images/aiplat.com/donate_WX.png'),
             },
             {
                 name: '支付宝收款',
-                img: require('../../assets/images/aiplat.com/donate_ZFB.png'),
+                img: require('../../../assets/images/aiplat.com/donate_ZFB.png'),
             },
         ],
     };
