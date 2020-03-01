@@ -104,6 +104,11 @@
                         url: 'http://nerv.aiplat.com',
                         market: '',
                     },
+                    {
+                        name: '单页面uniapp版',
+                        url: 'http://uniapp.aiplat.com',
+                        market: '',
+                    },
                 ],
             },
         ];
