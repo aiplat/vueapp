@@ -56,7 +56,7 @@ module.exports = {
   devServer: {
     open: true,
     host: getIP(),
-    port: 3003,
+    port: 2020,
     overlay: {
       warnings: true,
       errors: true

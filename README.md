@@ -44,7 +44,7 @@
  - $ npm run dev
  -
  - App running at:
- - Local:   http://本地IP:2020/
+ - Local:   http://本地IP:2020/ 或 http://localhost:2020
  - Network: http://本地IP:2020/
 
 # 打包项目
