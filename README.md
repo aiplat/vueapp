@@ -10,6 +10,7 @@
  - 实例相对应网站1：ai智能空间react版   http://react.aiplat.com
  - 实例相对应网站2：ai智能空间angular版 http://ajs.aiplat.com
  - 实例相对应网站3：ai智能空间nervjs版  http://nerv.aiplat.com
+ - 实例相对应网站4：ai智能空间uniapp版  http://uniapp.aiplat.com
 
  - 另外 全平台框架: https://github.com/aiplat/uniapp
 
