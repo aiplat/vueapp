@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Aiplat from './aiplat.com';
+import conf from '../projects/aiplat.com/conf';
 
 Vue.use(Router);
 
@@ -15,7 +16,7 @@ const routes:any = new Router({
 })
 
 routes.beforeEach((to: any, from: any, next: any) => {
-    document.title = `${to.meta.title} - ${to.name}`;
+    document.title = `${to.name} - ${conf.name}`;
     next();
 });
 

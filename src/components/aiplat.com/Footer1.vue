@@ -41,7 +41,7 @@
         private items: object[] = [
             {
                 name: '首页',
-                url: '/index.html',
+                url: '/',
                 img: require('../../assets/images/aiplat.com/sy_01.png'),
                 imgon: require('../../assets/images/aiplat.com/sy_01on.png'),
             },
