@@ -15,7 +15,7 @@ const routes:any = new Router({
 })
 
 routes.beforeEach((to: any, from: any, next: any) => {
-    document.title = `${to.meta.title} - ${conf.name}`;
+    document.title = `${to.meta.title} - ${to.name}`;
     next();
 });
 
