@@ -4,7 +4,7 @@ import Aiplat from './aiplat.com';
 
 Vue.use(Router);
 
-export default new Router({
+const routes:any = new Router({
     mode: 'history',
     base: process.env.publicPath,
     routes: Aiplat,
@@ -12,4 +12,11 @@ export default new Router({
         console.log(from.path, to.path, 'savedPosition=>', savedPosition);
         return savedPosition || { x: 0, y: 0 };
     },
+})
+
+routes.beforeEach((to: any, from: any, next: any) => {
+    document.title = `${to.meta.title} - ${conf.name}`;
+    next();
 });
+
+export default routes;

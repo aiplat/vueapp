@@ -12,11 +12,6 @@ Vue.prototype.$cm = cm;
 Vue.prototype.$conf = conf;
 Vue.prototype.$apis = apis;
 
-router.beforeEach((to: any, from: any, next: any) => {
-    document.title = `${to.meta.title} - ${conf.name}`;
-    next();
-});
-
 new Vue({
   router,
   store,
