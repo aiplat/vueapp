@@ -1,7 +1,7 @@
 # vueapp
 ## vue-cli4 typescript版本
  - vue-cli4+vuex+cmui+html5+css3+typescript+tslint
- - 适合开发各种webapp
+ - 适合开发各种webapp,全平台框架项目（pc、h5、微信公众号、小程序嵌套h5、安卓与ios应用）
  - aiplat.com开源框架来自vue-cli
  - cmui仓库为https://github.com/aiplat/cmui.git
  - 结合hbuilder打包，可以直接做成全平台应用。例如 亲信地铁（vueapp） 腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
@@ -18,16 +18,19 @@
 
 # 代码目录结构
 
- - dist            ------npm run build后实际布署代码目录
+ - dist            ------yarn run build后实际布署代码目录
  - public          ------index.html等目录
  - src             ------代码主体目录
- - --- assets      ------静态css、images文件目录
+ - --- assets      ------公共静态css、images文件目录
+ - --- builds      ------运行时生成引用项目配置文件的目录
  - --- components  ------公共组件目录
  - --- plugins     ------公共函数或插件目录
+ - --- projects    ------项目主目录
+ - ------- aiplat.com    ------子目录：aiplat.com项目
  - --- routes      ------路由配置目录
  - --- service     ------公共配置目录
  - --- views       ------路由对应页面视图目录
- - --- vuex        ------store目录
+ - --- vuexStore   ------store目录
  - --- App.vue     ------应用承载文件
  - --- main.ts     ------应用入口文件
  - tests           ------测试目录
@@ -39,19 +42,27 @@
 
 # 安装依赖
  - $ cd vueapp
- - $ npm install
+ - $ yarn
 
 # 开发模式(实时刷新)
- - $ npm run dev
+ - $ yarn run dev --env=uat --project=aiplat.com --> 运行uat环境的aiplat.com项目
+ - $ yarn run dev --env=ver --project=aiplat.com --> 运行ver环境的aiplat.com项目
+ - $ yarn run dev --env=pro --project=aiplat.com --> 运行pro环境的aiplat.com项目
  -
  - App running at:
- - Local:   http://本地IP:2020/ 或 http://localhost:2020
+ - Local:   http://localhost:2020
  - Network: http://本地IP:2020/
 
 # 打包项目
- - $ npm run build
+ - $ yarn run build --env=uat --project=aiplat.com --> 打包uat环境的aiplat.com项目
+ - $ yarn run build --env=ver --project=aiplat.com --> 打包ver环境的aiplat.com项目
+ - $ yarn run build --env=pro --project=aiplat.com --> 打包生产环境的aiplat.com项目
  - 整个项目代码打包到dist目录，打开其中index.html就是项目 首页
  - 布署到服务器，直接将dist目录中文件放在服务器根目录
+
+# src/projects
+ - 多项目共存目录
+ - 解决多个h5项目多个仓库多个维护的问题，使用同一个仓库公共框架及组件，方便管理与维护
 
 ---
 

@@ -16,6 +16,7 @@
     "ordered-imports": false,
     "quotemark": [true, "single"],
     "no-console": false,
-    "max-line-length": false
+    "max-line-length": false,
+    "no-empty": false
   }
 }

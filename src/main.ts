@@ -1,16 +1,11 @@
-import Vue from 'vue';
+import Vue from '@/service/prototype';
 import App from './App.vue';
-import router from './routes/index';
-import store from './vuex/store';
-import cm from './plugins/cmapp';
-import conf from './service/conf';
-import apis from './service/apis';
+import router from '@/builds/routes';
+import store from '@/vuexStore/index';
+import '@/builds/components';
 import './registerServiceWorker';
 
-Vue.config.productionTip = true;
-Vue.prototype.$cm = cm;
-Vue.prototype.$conf = conf;
-Vue.prototype.$apis = apis;
+Vue.config.productionTip = false;
 
 new Vue({
   router,

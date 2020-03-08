@@ -13,6 +13,7 @@ const getIP = () => {
 };
 
 const isPro = process.env.NODE_ENV === 'production';
+console.log('Run ip:', getIP());
 
 module.exports = {
   publicPath: '',
@@ -39,12 +40,15 @@ module.exports = {
     cfg.resolve.alias = {
       ...cfg.resolve.alias, // 添加现有的别名，
       assets: './src/assets',
+      builds: './src/builds',
       components: './src/components',
       plugins: './src/plugins',
       projects: './src/projects',
+      routes: './src/routes',
       service: './src/service',
       static: './src/static',
       views: './src/views',
+      vuexStore: './src/vuexStore',
     };
   },
   chainWebpack: () => {},
@@ -55,7 +59,10 @@ module.exports = {
   },
   devServer: {
     open: true,
-    host: getIP(),
+    // host: getIP(),
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    },
     port: 2020,
     overlay: {
       warnings: true,
