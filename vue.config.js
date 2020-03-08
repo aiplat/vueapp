@@ -1,4 +1,5 @@
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const getIP = () => {
   const interfaces = require('os').networkInterfaces();
   for (const devName in interfaces) {
@@ -38,6 +39,19 @@ module.exports = {
           return assetFilename.endsWith('.js');
         }
       };
+      cfg.plugins.push(
+        new uglifyJsPlugin({
+          uglifyOptions: {
+            compress: {
+              drop_debugger: true,
+              drop_console: true,
+            },
+            warnings: false,
+          },
+          sourceMap: false,
+          parallel: true,
+        })
+      );
       cfg.plugins.push(new CompressionWebpackPlugin({
         algorithm: 'gzip',
         test: new RegExp('\\.(' + ['ts', 'js', 'css'].join('|') + ')$'),
