@@ -1,8 +1,8 @@
 <template>
   <div class="cm_main2">
     <div class="cm_main cm_pr">
-      <Header1 :title="title" />
-      <div class="cm_pc_12 cm_mt3 cm_mb8">
+      <Header1 :title="title" v-if="!iswx" />
+      <div class="cm_pc_12 cm_mb8" :class="{'cm_mt3':!iswx}">
         <ul class="cm_pc_12">
           <li class="cm_pc_12 cm_mt05">
             <div class="metro_icon cm_wh7 cm_bs100 cm_fc"></div>

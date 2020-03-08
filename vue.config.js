@@ -30,9 +30,17 @@ module.exports = {
   integrity: false,
   configureWebpack: cfg => {
     if (process.env.NODE_ENV === 'production') {
+      cfg.performance = {
+        hints: 'warning',
+        maxEntrypointSize: 20480000,
+        maxAssetSize: 20480000,
+        assetFilter: function (assetFilename) {
+          return assetFilename.endsWith('.js');
+        }
+      };
       cfg.plugins.push(new CompressionWebpackPlugin({
         algorithm: 'gzip',
-        test: new RegExp('\\.(' + ['js', 'css'].join('|') + ')$'),
+        test: new RegExp('\\.(' + ['ts', 'js', 'css'].join('|') + ')$'),
         threshold: 10240,
         minRatio: 0.8
       }))
@@ -51,7 +59,7 @@ module.exports = {
       vuexStore: './src/vuexStore',
     };
   },
-  chainWebpack: () => {},
+  chainWebpack: () => { },
   css: {
     requireModuleExtension: true,
     extract: isPro,
