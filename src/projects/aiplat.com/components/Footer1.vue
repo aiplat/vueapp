@@ -84,8 +84,8 @@ export default class Footer1 extends Vue {
     copyright: '©2016',
   };
   private beian: object = {
-    name: '粤ICP备16011379号-2',
-    url: 'http://www.miibeian.gov.cn',
+    name: '粤ICP备16011379号',
+    url: 'http://beian.miit.gov.cn',
   };
 }
 </script>

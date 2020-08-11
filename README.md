@@ -53,18 +53,18 @@
  - $ yarn
 
 # 开发模式(实时刷新)
- - $ yarn run dev --env=uat --project=aiplat.com --> 运行uat环境的aiplat.com项目
- - $ yarn run dev --env=ver --project=aiplat.com --> 运行ver环境的aiplat.com项目
- - $ yarn run dev --env=pro --project=aiplat.com --> 运行pro环境的aiplat.com项目
+ - $ yarn run dev --env=uat --type=aiplat.com --> 运行uat环境的aiplat.com项目
+ - $ yarn run dev --env=ver --type=aiplat.com --> 运行ver环境的aiplat.com项目
+ - $ yarn run dev --env=pro --type=aiplat.com --> 运行pro环境的aiplat.com项目
  -
  - App running at:
  - Local:   http://localhost:2020
  - Network: http://本地IP:2020/
 
 # 打包项目
- - $ yarn run build --env=uat --project=aiplat.com --> 打包uat环境的aiplat.com项目
- - $ yarn run build --env=ver --project=aiplat.com --> 打包ver环境的aiplat.com项目
- - $ yarn run build --env=pro --project=aiplat.com --> 打包生产环境的aiplat.com项目
+ - $ yarn run build --env=uat --type=aiplat.com --> 打包uat环境的aiplat.com项目
+ - $ yarn run build --env=ver --type=aiplat.com --> 打包ver环境的aiplat.com项目
+ - $ yarn run build --env=pro --type=aiplat.com --> 打包生产环境的aiplat.com项目
  - 整个项目代码打包到dist目录，打开其中index.html就是项目 首页
  - 布署到服务器，直接将dist目录中文件放在服务器根目录
 

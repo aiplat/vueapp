@@ -3,7 +3,7 @@
  */
 const pf: any = {
   aiplat: {
-    name: 'AI智能空间',
+    name: 'AI智能空间-前端开发',
     type: 'aiplat',
     site: 'aiplat.com',
     url: 'https://aiplat.com',

@@ -38,9 +38,9 @@ async function configArgv() {
   let runId = argv.original.indexOf('run');
   const buildType = argv.original[runId + 1];
   let envType = argv.original[runId + 2];
-  envType = isIn(envType, 'env=', 'uat');
-  let project = argv.original[runId + 3];
-  project = isIn(project, 'project=', 'aiplat.com');
+  envType = envType ? isIn(envType, 'env=', 'uat') : 'uat';
+  let type = argv.original[runId + 3];
+  type = type ? isIn(type, 'type=', 'aiplat.com') : 'aiplat.com';
 
   const buildsDir = './src/builds';
   shell.rm('-rf', buildsDir);
@@ -53,16 +53,16 @@ async function configArgv() {
   };
   const isDevTxt = buildType === 'build' ? '构建' : '开发';
   console.log('');
-  console.log(`------${isDevTxt}${project}-${envTxt[envType]}环境------`);
+  console.log(`------${isDevTxt}${type}-${envTxt[envType]}环境------`);
   console.log('');
   await addEnvType(envType);
 
-  const a = `./src/projects/${project}/builds/conf.ts`;
-  const b = `./src/projects/${project}/builds/apis.ts`;
-  const c = `./src/projects/${project}/builds/routes.ts`;
-  const d = `./src/projects/${project}/builds/Business.class.ts`;
-  const e = `./src/projects/${project}/builds/components.ts`;
-  const f = `./src/projects/${project}/builds/store.ts`;
+  const a = `./src/projects/${type}/builds/conf.ts`;
+  const b = `./src/projects/${type}/builds/apis.ts`;
+  const c = `./src/projects/${type}/builds/routes.ts`;
+  const d = `./src/projects/${type}/builds/Business.class.ts`;
+  const e = `./src/projects/${type}/builds/components.ts`;
+  const f = `./src/projects/${type}/builds/store.ts`;
   shell.cp('-R', a, './src/builds/conf.ts');
   shell.cp('-R', b, './src/builds/apis.ts');
   shell.cp('-R', c, './src/builds/routes.ts');

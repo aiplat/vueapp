@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import envRoutes from '@/projects/aiplat.com/routes/aiplat';
-import conf from '@/projects/aiplat.com/conf';
+import envRoutes from '@/projects/giaomeng.com/routes/giaomeng'; // 备案时打包
+import conf from '@/projects/giaomeng.com/conf';
 
 Vue.use(Router);
 
@@ -19,7 +19,7 @@ routes.beforeEach(async (to: any, from: any, next: any) => {
     if (from === 1) {
         console.log(from);
     }
-    document.title = `${to.name} - ${conf.aiplat.name}`;
+    document.title = `${to.name} - ${conf.giaomeng.name}`;
     next();
 });
 
