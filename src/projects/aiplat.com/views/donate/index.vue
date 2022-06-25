@@ -27,29 +27,29 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  components: {}
+  components: {},
 })
 export default class Donate extends Vue {
-  private title: string = "";
+  private title: string = '';
   private iswx: number = 0;
   private indexData: object = {
     desc:
-      "非常感谢各位对ai智能空间的无偿捐赠,ai智能空间将会持续开发更多更好的应用。",
+      '非常感谢各位对ai智能空间的无偿捐赠,ai智能空间将会持续开发更多更好的应用。',
     about:
-      "特别说明:以上收款二维码仅在全球唯一网站aiplat.com有效,对于全球其他地方或网站出现的均是假冒的。",
+      '特别说明:以上收款二维码仅在全球唯一网站aiplat.com有效,对于全球其他地方或网站出现的均是假冒的。',
     dnarr: [
       {
-        name: "微信收款",
-        img: require("@/assets/images/aiplat.com/donate_WX.png")
+        name: '微信收款',
+        img: require('@/assets/images/aiplat.com/donate_WX.png'),
       },
       {
-        name: "支付宝收款",
-        img: require("@/assets/images/aiplat.com/donate_ZFB.png")
-      }
-    ]
+        name: '支付宝收款',
+        img: require('@/assets/images/aiplat.com/donate_ZFB.png'),
+      },
+    ],
   };
 
   get dnid() {
@@ -57,7 +57,7 @@ export default class Donate extends Vue {
   }
 
   private tsDnid(k: number) {
-    this.$store.dispatch("setDnid", k);
+    this.$store.dispatch('setDnid', k);
   }
 
   private created() {
@@ -65,14 +65,9 @@ export default class Donate extends Vue {
     t.iswx = window.H5.app.iswx;
   }
 
-  private mounted() {
-    // console.log("mounted");
-  }
-
   private activated() {
     const t: any = this;
     t.title = t.$route.name;
-    console.log("t.$store.getters.getDnid === ", t.$store.getters.getDnid);
   }
 }
 </script>

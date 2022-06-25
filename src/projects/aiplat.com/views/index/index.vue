@@ -47,103 +47,97 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  components: {}
+  components: {},
 })
 export default class Index extends Vue {
-  private title: string = "";
+  private title: string = '';
   private iswx: number = 0;
   private indexData: any = {
-    description: "",
-    gitName: "我的github",
-    gitUrl: "github.com/aiplat",
-    gitUrl2: "https://github.com/aiplat",
+    description: '',
+    gitName: '我的github',
+    gitUrl: 'github.com/aiplat',
+    gitUrl2: 'https://github.com/aiplat',
     gitList: [
       {
-        name: "cmui",
-        desc: "自己写的跨平台css3框架",
-        url: "https://github.com/aiplat/cmui"
+        name: 'cmui',
+        desc: '自己写的跨平台css3框架',
+        url: 'https://github.com/aiplat/cmui',
       },
       {
-        name: "uniapp",
-        desc: "改写uni-app的跨平台框架",
-        url: "https://github.com/aiplat/uniapp"
+        name: 'uniapp',
+        desc: '改写uni-app的跨平台框架',
+        url: 'https://github.com/aiplat/uniapp',
       },
       {
-        name: "vueapp",
-        desc: "改写vue-cli的跨平台框架",
-        url: "https://github.com/aiplat/vueapp"
+        name: 'vueapp',
+        desc: '改写vue-cli的跨平台框架',
+        url: 'https://github.com/aiplat/vueapp',
       },
       {
-        name: "react-app-ie8",
-        desc: "改写react兼容IE8的跨平台框架",
-        url: "https://github.com/aiplat/react-app-ie8"
+        name: 'react-app-ie8',
+        desc: '改写react兼容IE8的跨平台框架',
+        url: 'https://github.com/aiplat/react-app-ie8',
       },
       {
-        name: "angular-app",
-        desc: "改写angular-cli的跨平台框架",
-        url: "https://github.com/aiplat/angular-app"
+        name: 'angular-app',
+        desc: '改写angular-cli的跨平台框架',
+        url: 'https://github.com/aiplat/angular-app',
       },
       {
-        name: "express-multipage",
-        desc: "改写express的多页面框架",
-        url: "https://github.com/aiplat/express-multipage"
+        name: 'express-multipage',
+        desc: '改写express的多页面框架',
+        url: 'https://github.com/aiplat/express-multipage',
       },
       {
-        name: "nervjs-ie8",
-        desc: "改写nervjs兼容IE8的多页面框架",
-        url: "https://github.com/aiplat/nervjs-ie8"
+        name: 'nervjs-ie8',
+        desc: '改写nervjs兼容IE8的多页面框架',
+        url: 'https://github.com/aiplat/nervjs-ie8',
       },
       {
-        name: "wepy-app",
-        desc: "改写wepy的小程序框架",
-        url: "https://github.com/aiplat/wepy-app"
+        name: 'wepy-app',
+        desc: '改写wepy的小程序框架',
+        url: 'https://github.com/aiplat/wepy-app',
       },
       {
-        name: "reactNative",
-        desc: "改写reactNative的APP框架",
-        url: "https://github.com/aiplat/reactNative"
-      }
+        name: 'reactNative',
+        desc: '改写reactNative的APP框架',
+        url: 'https://github.com/aiplat/reactNative',
+      },
     ],
-    cooperation: "商业合作",
-    email: "womendi@qq.com"
+    cooperation: '商业合作',
+    email: 'womendi@qq.com',
   };
 
-  private popIsShow: string = "no";
+  private popIsShow: string = 'no';
   private popData: object = {
-    title: "温馨提示",
-    content: "欢迎访问aiplat.com"
+    title: '温馨提示',
+    content: '欢迎访问aiplat.com',
   };
 
   private toEmail() {
-    return "mailto:" + this.indexData.email;
+    return 'mailto:' + this.indexData.email;
   }
 
   private showWelcome() {
     const t: any = this;
-    t.popIsShow = "yes";
+    t.popIsShow = 'yes';
     setTimeout(() => {
-      t.popIsShow = "no";
+      t.popIsShow = 'no';
     }, 2000);
   }
 
   private created() {
     const t: any = this;
     t.iswx = window.H5.app.iswx;
-    console.log("iswx = ", t.iswx);
     t.indexData.description = t.$conf.aiplat.description;
-  }
-
-  private mounted() {
-    console.log("mounted");
   }
 
   private async activated() {
     const t: any = this;
     t.title = t.$route.name;
-    console.log("index activated");
   }
 }
 </script>

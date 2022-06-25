@@ -6,21 +6,18 @@ import conf from '@/projects/aiplat.com/conf';
 Vue.use(Router);
 
 const routes: any = new Router({
-    mode: 'history',
-    base: process.env.publicPath,
-    routes: envRoutes,
-    scrollBehavior(to: any, from: any, savedPosition: any) {
-        console.log(from.path, to.path, 'savedPosition=>', savedPosition);
-        return savedPosition || { x: 0, y: 0 };
-    },
+  mode: 'history',
+  base: process.env.publicPath,
+  routes: envRoutes,
+  scrollBehavior(to: any, from: any, savedPosition: any) {
+    return savedPosition || { x: 0, y: 0 };
+  },
 });
 
 routes.beforeEach(async (to: any, from: any, next: any) => {
-    if (from === 1) {
-        console.log(from);
-    }
-    document.title = `${to.name} - ${conf.aiplat.name}`;
-    next();
+  const isIndex = to.path === '/' ? '' : ` - ${to.name}`;
+  document.title = `${conf.aiplat.name}${isIndex}`;
+  next();
 });
 
 export default routes;

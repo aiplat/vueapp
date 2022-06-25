@@ -11,12 +11,12 @@ const routes = [
     { path: '/index', redirect: '/' },
     { path: '/index.htm', redirect: '/' },
     { path: '/index.html', redirect: '/' },
-    {
-        path: '/beian',
-        name: '备案',
-        component: () => import('@/projects/aiplat.com/views/common/beian.vue'),
-        meta: { auth: false },
-    },
+    // {
+    //     path: '/beian',
+    //     name: '备案',
+    //     component: () => import('@/projects/aiplat.com/views/common/beian.vue'),
+    //     meta: { auth: false },
+    // },
     { path: '/apps', redirect: '/apps.html' },
     { path: '/apps.htm', redirect: '/apps.html' },
     {

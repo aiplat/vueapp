@@ -70,18 +70,12 @@ export default class Index extends Vue {
   private created() {
     const t: any = this;
     t.iswx = window.H5.app.iswx;
-    console.log('iswx = ', t.iswx);
     t.indexData.description = t.$conf.giaomeng.description;
-  }
-
-  private mounted() {
-    console.log('mounted');
   }
 
   private async activated() {
     const t: any = this;
     t.title = t.$route.name;
-    console.log('index activated');
   }
 }
 </script>
