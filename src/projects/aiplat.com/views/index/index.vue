@@ -107,7 +107,7 @@ export default class Index extends Vue {
         url: 'https://github.com/aiplat/reactNative',
       },
     ],
-    cooperation: '商业合作',
+    cooperation: '邮箱联系',
     email: 'womendi@qq.com',
   };
 
