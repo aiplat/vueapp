@@ -59,12 +59,12 @@ export default class Footer1 extends Vue {
       img: require('@/assets/images/aiplat.com/sy_03.png'),
       imgon: require('@/assets/images/aiplat.com/sy_03on.png'),
     },
-    {
-      name: '捐赠我们',
-      url: '/donate.html',
-      img: require('@/assets/images/aiplat.com/sy_04.png'),
-      imgon: require('@/assets/images/aiplat.com/sy_04on.png'),
-    },
+    // {
+    //   name: '关于我们',
+    //   url: '/our.html',
+    //   img: require('@/assets/images/aiplat.com/sy_04.png'),
+    //   imgon: require('@/assets/images/aiplat.com/sy_04on.png'),
+    // },
   ];
   private arr: object[] = [
     { name: 'web app', url: 'http://m.aiplat.com/metro' },

@@ -33,6 +33,14 @@ const routes = [
         component: () => import('@/projects/aiplat.com/views/donate/index.vue'),
         meta: { auth: false },
     },
+    { path: '/our', redirect: '/our.html' },
+    { path: '/our.htm', redirect: '/our.html' },
+    {
+        path: '/our.html',
+        name: '关于我们',
+        component: () => import('@/projects/aiplat.com/views/our/index.vue'),
+        meta: { auth: false },
+    },
     {
         path: '*',
         name: '发现',
